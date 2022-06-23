@@ -5,7 +5,6 @@ export interface themeProps {
     warning: string;
     green: string;
     blue: string;
-    red: string;
-    nada: string;
+    error: string;
   }
 }
