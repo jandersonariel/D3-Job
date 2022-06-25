@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
             <S.Column>
                 <S.FlexIcons>
                     <S.SocialLogo src={'https://i.imgur.com/PEJgMUN.png'} />
-                    <S.SocialLogoText>@DAY3_Official</S.SocialLogoText>
+                    <S.SocialLogoText>@DAY_Official</S.SocialLogoText>
                 </S.FlexIcons>
 
                 <S.FlexIcons>

@@ -4,11 +4,10 @@ export default createGlobalStyle`
   * {
     margin: 0;
     box-sizing: border-box;
-    fontFamily: 'Montserrat, sans-serif',
+    fontFamily: 'Montserrat, sans-serif';
     &::-webkit-scrollbar {
       width: 0;
     }
-    padding: 1px;
   }
 
   body {
@@ -18,6 +17,6 @@ export default createGlobalStyle`
   text { 
   }
   button {
-
+    color: ${props => props.theme.colors.primary};
   }
 `;
