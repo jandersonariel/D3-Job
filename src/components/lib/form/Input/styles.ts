@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
 import MaskedInput from 'react-text-mask';
-import { theme } from '../../../../global';
+import { colors } from '../../../../global';
 
 interface ContainerProps {
   disabled?: boolean;
@@ -15,7 +15,7 @@ interface IconProps {
 const passwordIcon = css`
   height: 1.5rem;
   width: 1.5rem;
-  fill: ${theme.colors.secondary};
+  fill: ${colors.secondary};
 `;
 
 export const Toggle = styled.button.attrs(() => ({ type: 'button' }))`
@@ -52,9 +52,9 @@ export const Field = styled(MaskedInput)`
   background: transparent;
   border: none;
   box-sizing: border-box;
-  border-bottom: 1px solid ${theme.colors.primary};
+  border-bottom: 1px solid ${colors.primary};
   padding-bottom: 8px;
-  color: ${theme.colors.primary};
+  color: ${colors.primary};
   font-size: 1.125rem;
   line-height: 150%;
   border-radius: 0;
@@ -63,17 +63,17 @@ export const Field = styled(MaskedInput)`
     font-size: 1.125rem;
     line-height: 150%;
     text-transform: none;
-    color: ${theme.colors.primary};
+    color: ${colors.primary};
   }
   :-webkit-autofill,
   :-webkit-autofill:hover,
   :-webkit-autofill:focus {
-    box-shadow: 0 0 0px 1000px ${theme.colors.primary} inset;
+    box-shadow: 0 0 0px 1000px ${colors.primary} inset;
     transition: background-color 5000s ease-in-out 0s;
   }
 
   &:focus {
-    border-bottom: 2px solid ${theme.colors.primary};
+    border-bottom: 2px solid ${colors.primary};
   }
 
   ${({ transform }: any) =>
@@ -94,7 +94,7 @@ export const Label = styled.div`
 
   font-size: 0.875rem;
 
-  color: ${theme.colors.primary};
+  color: ${colors.primary};
 `;
 
 export const ClosedEye = styled(AiFillEyeInvisible)`
@@ -114,10 +114,10 @@ export const Container = styled.div<ContainerProps>`
     error &&
     css`
       ${Field} {
-        border-color: ${theme.colors.error};
+        border-color: ${colors.error};
       }
       ${Label} {
-        color: ${theme.colors.error};
+        color: ${colors.error};
       }
     `}
 

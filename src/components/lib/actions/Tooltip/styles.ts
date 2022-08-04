@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { medias, theme } from '../../../../global';
+import { medias, colors } from '../../../../global';
 
 import { ITooltipStyles } from './interface';
 
@@ -78,15 +78,15 @@ export const Label = styled.span<ITooltipStyles>`
   ${({ placement }) => handlePlacementTooltip({ placement })}
 
   text-align: center;
-  color: ${theme.colors.primary};
+  color: ${colors.primary};
 
 
-  background: ${theme.colors.secondary};
+  background: ${colors.secondary};
 
   &::before {
     content: '';
     border-style: solid;
-    border-color: ${theme.colors.primary} transparent;
+    border-color: ${colors.primary} transparent;
     border-width: 4px 4px 0 4px;
     top: 100%;
     position: absolute;
@@ -99,7 +99,7 @@ export const Description = styled.span`
   display: flex;
 
   svg {
-    color: ${theme.colors.primary};
+    color: ${colors.primary};
     width: 20px;
     height: 20px;
   }

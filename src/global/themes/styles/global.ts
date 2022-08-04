@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${colors.primary};
+    background: ${colors.secondary};
     color: ${colors.primary};
   }
   text { 
