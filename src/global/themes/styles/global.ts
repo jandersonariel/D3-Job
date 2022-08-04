@@ -1,12 +1,12 @@
 import { createGlobalStyle } from "styled-components";
 
-import { colors } from '../themes';
+import { colors } from '../../themes';
 
-export default createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     box-sizing: border-box;
-    fontFamily: 'Montserrat, sans-serif';
+    font-family: 'Montserrat, sans-serif';
     &::-webkit-scrollbar {
       width: 0;
     }

@@ -1,4 +1,4 @@
-import { ColorsProps } from './interface'
+import { ColorsProps } from './interface';
 
 export const colors:ColorsProps = {
   primary: '#5A5A5A',
@@ -7,4 +7,6 @@ export const colors:ColorsProps = {
   green: '#41F674',
   blue: '#4E9EE8',
   error: '#E26F6F',
-}
+};
+
+export type { ColorsProps };

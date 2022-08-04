@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors } from '../../global';
 
 export const Container = styled.div`
   display: flex;
@@ -21,8 +22,8 @@ export const BannerBox = styled.div`
   display: flex;
   width: 275px;
   height: 180px;
-  background-color: ${props => props.theme.colors.primary};
-  color: ${props => props.theme.colors.secondary};
+  background-color: ${colors.primary};
+  color: ${colors.secondary};
   border-radius: 16px;
   align-items: center;
   justify-content: center;
@@ -34,8 +35,8 @@ export const BannerMiddleBox = styled.div`
   display: flex;
   width: 275px;
   height: 180px;
-  background-color: ${props => props.theme.colors.primary};
-  color: ${props => props.theme.colors.secondary};
+  background-color: ${colors.primary};
+  color: ${colors.secondary};
   border-radius: 16px;
   align-items: center;
   justify-content: center;
@@ -49,7 +50,7 @@ export const BoxText = styled.a`
   font-weight: 400;
   text-align: center;
   margin-bottom: 0.3rem;
-  color: ${props => props.theme.colors.secondary};
+  color: ${colors.secondary};
 `
 
 export const BoxIcon = styled.img`

@@ -1,2 +1,2 @@
 export * from './medias';
-export * from './styles';
+export * from './themes';

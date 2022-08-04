@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors } from '../../../global';
 
 export const Container = styled.div`
     display: flex;
@@ -37,15 +38,15 @@ export const NavbarLogin = styled.a`
 
 export const NavbarButton = styled.button`
     height: 53px;
-    background-color: ${props => props.theme.colors.primary};
+    background-color: ${colors.primary};
     border-radius: 16px;
     font-weight: 700;
     font-size: 32px;
     text-align: center;
-    color: ${props => props.theme.colors.secondary};
+    color: ${colors.secondary};
     border: solid 0 transparent;
 
     :hover {
-        background-color: ${props => props.theme.colors.primary}
+        background-color: ${colors.primary}
     }
 `

@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
+import { colors } from '../../../global';
+
 export const Container = styled.div`
     display: flex;
-    background-color: ${props => props.theme.colors.primary};
+    background-color: ${colors.primary};
     padding: 2em;
     align-items: flex-start;
     flex-direction: row;
@@ -27,7 +29,7 @@ export const MainTitle = styled.a`
     font-size: 32px;
     font-weight: 700;
     text-align: justify;
-    color: ${props => props.theme.colors.secondary};
+    color: ${colors.secondary};
 `
 
 export const MainText = styled.a`
@@ -35,7 +37,7 @@ export const MainText = styled.a`
     font-size: 16px;
     font-weight: 400;
     text-align: justify;
-    color: ${props => props.theme.colors.secondary};
+    color: ${colors.secondary};
 `
 
 export const Row = styled.div`
@@ -54,7 +56,7 @@ export const MainWarning = styled.a`
     font-size: 15px;
     font-weight: 400;
     text-align: justify;
-    color: ${props => props.theme.colors.error};
+    color: ${colors.error};
 `
 
 export const MainImage = styled.img`
