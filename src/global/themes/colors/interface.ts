@@ -5,4 +5,6 @@ export interface ColorsProps {
   green: string;
   blue: string;
   error: string;
+  white: string;
+  gray: string;
 }

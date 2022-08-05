@@ -39,7 +39,6 @@ export const Flag = styled.img`
 
 export const FieldWrapper = styled.div`
   position: relative;
-  display: flex;
 `;
 
 export const Loading = styled.div`
@@ -51,7 +50,6 @@ export const Field = styled(MaskedInput)`
   background-position: 100% 5% !important;
   background: transparent;
   border: none;
-  box-sizing: border-box;
   border-bottom: 1px solid ${colors.primary};
   padding-bottom: 8px;
   color: ${colors.primary};
@@ -86,8 +84,6 @@ export const Field = styled(MaskedInput)`
 export const InputGroup = styled.div``;
 
 export const Label = styled.div`
-  width: 100%;
-  display: flex;
   align-items: center;
 
   gap: 8px;
