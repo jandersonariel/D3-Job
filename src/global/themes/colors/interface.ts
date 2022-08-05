@@ -7,4 +7,5 @@ export interface ColorsProps {
   error: string;
   white: string;
   gray: string;
+  transparent: string;
 }

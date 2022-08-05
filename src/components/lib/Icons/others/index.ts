@@ -1,1 +1,1 @@
-export * from './wall';
+export * from './wall'
