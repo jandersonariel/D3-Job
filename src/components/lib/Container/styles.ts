@@ -14,7 +14,7 @@ export const Container = styled.div<containerStyleProps>`
   max-width: ${({ maxW }) => maxW ? maxW !== 'max-content' ? `${maxW}px` : maxW : '1280px'};
   max-height: ${({ maxH }) => maxH ? maxH !== 'max-content' ? `${maxH}px` : maxH : 'max-content'};
 
-  height: ${({ h }) => h ? h !== 'max-content' ? `${h}px` : 'max-content' : ''};
+  height: ${({ h }) => h !== 'max-content' ? `${h}px` : 'max-content'};
   width: ${({ w }) => w ? w !== 'max-content' ? `${w}px` : 'max-content' : '100%'};
 
   border-radius: ${({ radius }) => radius ? `${radius?.size}${radius?.style}` : '16px'};
