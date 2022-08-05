@@ -1,5 +1,5 @@
 import Axios from 'axios';
-import { IAuthClient } from './../types';
+import { IAuthWorker } from '../types/typesClient';
 
 declare var process: {
   env: {
@@ -23,8 +23,8 @@ const initAxios = (baseURL: string) => {
 
 export const authApi = initAxios(process.env. NEXT_PUBLIC_BASE_URL);
 
-export const serviceAuthClient = async (payload: IAuthClient) => {
-  const request = await authApi.post<IAuthClient>(`/auth/client`, payload)
+export const serviceAuthWorker = async (payload: IAuthWorker) => {
+  const request = await authApi.post<IAuthWorker>(`/auth/worker`, payload)
   
   return request.data
 }
