@@ -1,7 +1,7 @@
 import React from "react";
 
 import * as C from '../../../components';
-import * as A from  '../../../Assets';
+import * as A from  '../../../assets';
 
 import * as S from './styles';
 import Image from "next/image";

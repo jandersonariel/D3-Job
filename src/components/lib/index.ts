@@ -1,5 +1,5 @@
 export * from './form';
 export * from './actions';
-export * from './Container';
+export * from './layout';
 export * from './utils';
-export * from './Icons';
+export * from './icons';
