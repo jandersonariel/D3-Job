@@ -11,7 +11,7 @@ export const Paragraph = styled.span`
 
   @media (${medias.regular}) {
     position: absolute;
-    bottom: 15%;
+    bottom: 7%;
     left: 5%;
   }
 

@@ -7,7 +7,7 @@ import * as S from './styles';
 import Image from "next/image";
 
 export const MainContent = () => (
-  <C.Container maxWidth={1600} direction="column" align="center" mobileResponsive position="relative" minHeight={770} gap={[0, 20]}>
+  <C.Container maxWidth={1600} direction="column" align="center" mobileResponsive position="relative" padding="40px 20px 0 20px" minHeight={770} gap={[0, 20]}>
     <>
       <S.Paragraph>
         <S.Title> Como funciona? </S.Title>
