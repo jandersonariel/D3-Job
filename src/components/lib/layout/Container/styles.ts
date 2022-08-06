@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, medias } from "../../../global";
+import { colors, medias } from "../../../../global";
 import { containerStyleProps } from "./interface";
 
 const sizes = {

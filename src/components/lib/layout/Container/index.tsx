@@ -1,6 +1,6 @@
 import React from "react";
-import { containerProps } from "./interface";
 
+import * as I from "./interface";
 import * as S from './styles';
 
 export const Container = ({
@@ -20,7 +20,7 @@ export const Container = ({
   mobileResponsive,
   minHeight,
   position,
-}: containerProps) => (
+}: I.containerProps) => (
   <S.Container 
     direction={direction}
     gap={gap}

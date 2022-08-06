@@ -1,4 +1,4 @@
-import { colorProps } from "../../../global";
+import { colorProps } from "../../../../global";
 
 type gaps = [desktop: number, mobile?: number ];
 type sizes = 'maxContent' | 'block' | 'default';
