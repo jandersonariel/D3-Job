@@ -18,6 +18,8 @@ export const Container = ({
   align,
   justify,
   mobileResponsive,
+  minHeight,
+  position,
 }: containerProps) => (
   <S.Container 
     direction={direction}
@@ -33,6 +35,8 @@ export const Container = ({
     align={align}
     justify={justify}
     mobileResponsive={mobileResponsive}
+    minH={minHeight}
+    pos={position}
   > 
     {children}  
   </S.Container>

@@ -1,5 +1,9 @@
 import styled from "styled-components";
-import { colors, fonts, medias, styleProps } from "../../../global";
+import { colors, fonts, medias } from "../../../global";
+
+interface styleProps {
+  gap?: string;
+}
 
 export const Container = styled.div`
   display: none;
@@ -17,38 +21,13 @@ export const Group = styled.span<styleProps>`
   gap: ${({ gap }) => gap};
 `;
 
-export const Link = styled.a<styleProps>`
+export const Link = styled.a`
   text-decoration: none;
   color: ${colors.primary};
   font-weight: ${fonts.weight.bold};
   font-size: ${fonts.sizes.medium};
 
   :hover {
-    text-decoration: underline;
     color: ${colors.blue};
-  }
-`;
-
-export const Button = styled.button<styleProps>`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  cursor: pointer;
-  padding: 10px;
-  width: ${({ widht }) => widht};
-  height: 43px;
-  font-weight: ${fonts.weight.semiBlack};
-
-  font-size: ${fonts.sizes.medium};
-
-  color: ${colors.secondary};
-  
-  border: 1px solid ${colors.secondary};
-  background: ${colors.primary};
-  border-radius: 16px;
-
-  :hover {
-    opacity: 0.8;
   }
 `;

@@ -9,6 +9,8 @@ export const colors: ColorsProps = {
   error: '#E26F6F',
   white: '#FFFFFF',
   gray: '#bebebe',
+  black: '#000000',
+  transparent: 'transparent',
 };
 
 export type { ColorsProps };
