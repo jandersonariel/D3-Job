@@ -37,7 +37,7 @@ export const Container = styled.div<containerStyleProps>`
   @media (${medias.regular}) {
     flex-direction: ${({ direction, mobileResponsive }) => mobileResponsive && direction === 'column' ? 'row' : 'column'};
     align-items: ${({ direction, align }) => !align ? direction === 'row' ? 'flex-start' : 'center' : align === 'flex-start' ? 'center' : 'flex-start'};
-    justify-content: ${({ direction, justify }) => !justify ? direction === 'row' ? 'center' : 'flex-start' : justify === 'flex-start' ? 'center' : 'flex-start'};
+    justify-content: ${({ direction, justify }) => !justify ? direction === 'row' ? 'center' : 'flex-start' ? justify === 'flex-start' ? 'center' : 'flex-start' : justify : ''};
     gap: ${({ gap }) => gap && `${gap[0]}px`};
   }
 `;

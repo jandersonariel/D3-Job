@@ -1,5 +1,4 @@
 import { OpcsProps } from "./interface";
-import { colors, fonts } from "../../../global";
 
 export const help: OpcsProps = [
   {

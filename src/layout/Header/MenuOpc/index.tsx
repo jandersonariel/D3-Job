@@ -16,5 +16,4 @@ export const MenuOpc: React.FC = () => (
         <Button color="white" font={login[1].font} size={login[1].size} title={login[1].name} />
     </S.Group>
   </S.Container>
-
 )

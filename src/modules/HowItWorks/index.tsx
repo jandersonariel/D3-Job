@@ -18,7 +18,7 @@ export const HowItWorks = () => (
         <S.Img src={A.imgs.up_png} alt=""/>  
       </S.ContainerImg>
     
-      <C.Container radius="none" bgColor="primary" width="block" maxWidth='block' padding={'0'} minHeight={770}>
+      <C.Container radius="none" justify="center" direction="column" bgColor="primary" width="block" maxWidth='block' minHeight={770}>
         <MainContent/>
       </C.Container>
   
