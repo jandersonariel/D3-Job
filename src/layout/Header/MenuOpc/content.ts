@@ -3,11 +3,11 @@ import { OpcsProps } from "./interface";
 export const help: OpcsProps = [
   {
     name: 'Como funciona?',
-    link: '',
+    link: '#how',
   },
   {
     name: 'Contatos',
-    link: '',
+    link: '#contact',
   },
 ]
 
