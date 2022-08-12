@@ -1,7 +1,7 @@
 import React from "react";
 
 import * as I from "./interface";
-import * as S from './styles';
+import * as S from "./styles";
 
 export const Container = ({
   children,
@@ -21,7 +21,7 @@ export const Container = ({
   minHeight,
   position,
 }: I.containerProps) => (
-  <S.Container 
+  <S.Container
     direction={direction}
     gap={gap}
     maxW={maxWidth}
@@ -37,7 +37,7 @@ export const Container = ({
     mobileResponsive={mobileResponsive}
     minH={minHeight}
     pos={position}
-  > 
-    {children}  
+  >
+    {children}
   </S.Container>
-)
+);
