@@ -31,8 +31,8 @@ export const Contacts = () => (
       >
         <S.Title> Contatos </S.Title>
 
-        {CT.contatos.map(({ img, name, url }) => (
-          <S.SubGroup key={name} href={url} target="_blank">
+        {CT.contatos.map(({ img, id, name, url }) => (
+          <S.SubGroup key={id} href={url} target="_blank">
             <S.Logo>
               <S.Img src={img} alt="" />
             </S.Logo>
