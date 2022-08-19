@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Document, {
   DocumentInitialProps,
   DocumentContext,
@@ -6,33 +6,36 @@ import Document, {
   Head,
   Main,
   NextScript,
-} from 'next/document'
-import 'regenerator-runtime/runtime'
-import { ServerStyleSheet } from 'styled-components'
+} from "next/document";
+import "regenerator-runtime/runtime";
+import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
-  static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
-    const sheet = new ServerStyleSheet()
-    const originalRenderPage = ctx.renderPage
+  static async getInitialProps(
+    ctx: DocumentContext
+  ): Promise<DocumentInitialProps> {
+    const sheet = new ServerStyleSheet();
+    const originalRenderPage = ctx.renderPage;
 
     try {
       ctx.renderPage = () =>
         originalRenderPage({
-          enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />),
-        })
+          enhanceApp: (App) => (props) =>
+            sheet.collectStyles(<App {...props} />),
+        });
 
-      const initialProps = await Document.getInitialProps(ctx)
+      const initialProps = await Document.getInitialProps(ctx);
       return {
         ...initialProps,
         styles: [
           <>
             {initialProps.styles}
             {sheet.getStyleElement()}
-          </>
+          </>,
         ],
-      }
+      };
     } finally {
-      sheet.seal()
+      sheet.seal();
     }
   }
 
@@ -46,7 +49,10 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
             rel="stylesheet"
           />
-          <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+          />
           <link rel="icon" href="/download.png" />
         </Head>
         <body>
@@ -54,6 +60,6 @@ export default class MyDocument extends Document {
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }

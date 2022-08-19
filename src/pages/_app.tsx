@@ -1,9 +1,8 @@
 import React from "react";
 import type { AppProps } from "next/app";
-import { GlobalStyle } from "../global";
 import { ThemeProvider } from "styled-components";
-import { colors } from "../global";
 import { QueryClient, QueryClientProvider } from "react-query";
+import { GlobalStyle, colors } from "../global";
 
 import { Header, Main } from "../layout";
 
