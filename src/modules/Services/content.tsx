@@ -4,11 +4,11 @@ import { Perfil, Services } from "../../components";
 
 export const imgButtons = [
   {
-    name: 'Prestadores',
+    name: "Prestadores",
     icon: <Services />,
   },
   {
-    name: 'Clientes',
+    name: "Clientes",
     icon: <Perfil />,
   },
-]
+];
