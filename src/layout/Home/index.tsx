@@ -1,16 +1,12 @@
 import React from "react";
 
-import { Container } from "../../components";
+import { Container } from "library-caiol.sousa";
+
+// import { Container } from "../../components";
 import { Services, HowItWorks, Contacts } from "../../modules";
 
 export const Home = () => (
-  <Container
-    direction="column"
-    width="block"
-    maxWidth="block"
-    gap={[20, 30]}
-    padding="0"
-  >
+  <Container direction="column" maxW="block" gap={{ desktop: 20, mobile: 30 }}>
     <>
       <Services />
       <HowItWorks />
