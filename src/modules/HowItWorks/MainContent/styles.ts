@@ -11,12 +11,6 @@ export const Paragraph = styled.span`
   max-width: 400px;
   gap: 11px;
 
-  @media (${medias.regular}) {
-    position: absolute;
-    bottom: 7%;
-    left: 5%;
-  }
-
   @media (${medias.xLmedium}) {
     max-width: 550px;
   }
@@ -55,14 +49,6 @@ export const Alert = styled.p`
 `;
 
 export const CustomGroup = styled(Group)`
-  padding: 0 30px;
-
-  @media (${medias.regular}) {
-    position: absolute;
-    bottom: 5%;
-    right: 0;
-  }
-
   span {
     width: 100% !important;
   }

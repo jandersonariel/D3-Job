@@ -20,14 +20,11 @@ export const HowItWorks = () => (
 
       <Container
         radius="none"
-        justify="center"
         maxW="block"
-        direction="column"
-        align="center"
-        mobileResponsive
-        pos="relative"
         minH={770}
+        pad={{ top: 10, left: 15, right: 15, bottom: 10 }}
         bgColor="#5A5A5A"
+        justify="center"
       >
         <MainContent />
       </Container>
