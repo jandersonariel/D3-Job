@@ -2,7 +2,6 @@ import React from "react";
 
 import { Container } from "library-caiol.sousa";
 
-// import { Container } from "../../components";
 import { Services, HowItWorks, Contacts } from "../../modules";
 
 export const Home = () => (

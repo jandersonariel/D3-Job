@@ -1,14 +1,10 @@
 import styled from "styled-components";
+import { Group } from "library-caiol.sousa";
 import { medias } from "../../global";
 
-export const Group = styled.div`
-  flex-direction: column;
-  align-items: center;
-  gap: 35px;
-  width: 100%;
-
+export const CustomGroup = styled(Group)`
   @media (${medias.small}) {
-    width: max-content;
+    max-width: max-content;
   }
 `;
 
@@ -22,7 +18,6 @@ export const ContainerWall = styled.span`
     width: 354px;
     height: 349px;
   } */
- 
 
   @media (${medias.small}) {
     svg {
@@ -30,5 +25,4 @@ export const ContainerWall = styled.span`
       height: 449px;
     }
   }
- 
 `;

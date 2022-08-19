@@ -7,4 +7,3 @@ export interface MediasProps {
   large: string;
   huge: string;
 }
-  

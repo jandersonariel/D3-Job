@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { sizeProps, colorProps, fontProps, weightProps } from "../../../../global";
+import { sizeProps, colorProps, fontProps, weightProps } from "../../../global";
 
 export interface ButtonProps {
   title: string;
@@ -14,8 +14,8 @@ export interface ButtonProps {
 }
 
 export interface ButtonStyles {
-  height?: number | 'max-content';
-  size?: sizeProps
+  height?: number | "max-content";
+  size?: sizeProps;
   font?: fontProps;
   color?: colorProps;
   weight?: weightProps;

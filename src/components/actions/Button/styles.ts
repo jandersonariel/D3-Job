@@ -1,25 +1,24 @@
 import styled from "styled-components";
 
-import { colors, fonts, medias } from "../../../../global";
+import { colors, fonts, medias } from "../../../global";
 import { ButtonStyles } from "./interface";
 
-const sizes = { 
-  block: '100%',
-  default: 'max-content',
-  variant: '275px',
-}
+const sizes = {
+  block: "100%",
+  default: "max-content",
+  variant: "275px",
+};
 
 export const Container = styled.button<ButtonStyles>`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 
   background-color: ${colors.primary};
 
   width: ${sizes.block};
-  height: ${({ height }) => height ? `${height}px` : 'max-content'};
+  height: ${({ height }) => (height ? `${height}px` : "max-content")};
 
   padding: 15px;
 
@@ -45,13 +44,15 @@ export const Container = styled.button<ButtonStyles>`
   }
 
   @media (${medias.xXsmall}) {
-    width: ${({ size }) => size ? sizes[size] : sizes.default};
+    width: ${({ size }) => (size ? sizes[size] : sizes.default)};
   }
 
   * {
-    font-size: ${({ font }) => font ? fonts.sizes[font] : fonts.sizes.regular};
-    color: ${({ color }) => color ?  colors[color] : colors.white};
-    font-weight: ${({ weight }) => weight ? fonts.weight[weight] : fonts.weight.semiBlack};
+    font-size: ${({ font }) =>
+      font ? fonts.sizes[font] : fonts.sizes.regular};
+    color: ${({ color }) => (color ? colors[color] : colors.white)};
+    font-weight: ${({ weight }) =>
+      weight ? fonts.weight[weight] : fonts.weight.semiBlack};
   }
 `;
 

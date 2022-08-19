@@ -10,7 +10,7 @@ export const Container = styled.main`
   @media (${medias.xXsmall}) {
     min-height: calc(100vh - 115px);
   }
-  
+
   @media (${medias.small}) {
     min-height: calc(100vh - 125px);
   }

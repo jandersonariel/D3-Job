@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import Image from 'next/image'
+import Image from "next/image";
+import { Group } from "library-caiol.sousa";
+
 import { colors, fonts, medias } from "../../../global";
 
 export const Paragraph = styled.span`
@@ -52,12 +54,7 @@ export const Alert = styled.p`
   color: ${colors.error};
 `;
 
-export const Group = styled.span`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 462px;
+export const CustomGroup = styled(Group)`
   padding: 0 30px;
 
   @media (${medias.regular}) {

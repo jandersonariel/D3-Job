@@ -7,7 +7,7 @@ export interface FontsProps {
     large: string;
     huge: string;
     xXlarge: string;
-  },
+  };
   weight: {
     light: string;
     regular: string;
@@ -15,5 +15,5 @@ export interface FontsProps {
     bold: string;
     semiBlack: string;
     black: string;
-  },
+  };
 }

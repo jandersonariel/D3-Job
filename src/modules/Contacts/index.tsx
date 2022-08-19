@@ -1,35 +1,50 @@
 import React from "react";
 
-import * as C from '../../components';
-import * as A from '../../assets';
+import { Container, Group } from "library-caiol.sousa";
 
-import * as S from './styles';
-import * as CT from './content';
+import * as A from "../../assets";
+
+import * as S from "./styles";
+import * as CT from "./content";
 
 export const Contacts = () => (
-  <C.Container justify="space-between" position="relative" direction="column" maxWidth="default" mobileResponsive gap={[30, 15]} padding="15px">
+  <Container
+    justify="space-between"
+    pos="relative"
+    align="center"
+    direction="column"
+    maxW="default"
+    mobileResponsive
+    gap={{ desktop: 30, mobile: 15 }}
+    pad={{ top: 20, bottom: 30, left: 50, right: 50 }}
+  >
     <>
-      <S.ContainerImg id='contact'>  
+      <S.ContainerImg id="contact">
         <S.Img src={A.imgs.peopleTalk} alt="" />
-      </S.ContainerImg>  
-  
-      <S.Group>
+      </S.ContainerImg>
+
+      <Group
+        direction="column"
+        maxW="max-content"
+        gap={{ desktop: 10 }}
+        pad={{ top: 0, left: 0, bottom: 40, right: 0 }}
+      >
         <S.Title> Contatos </S.Title>
 
-        {CT.contatos.map(({ img, name, url }) => 
+        {CT.contatos.map(({ img, name, url }) => (
           <S.SubGroup key={name} href={url} target="_blank">
-            
-            <S.Logo>  
+            <S.Logo>
               <S.Img src={img} alt="" />
             </S.Logo>
 
             {name}
-
           </S.SubGroup>
-        )}
-      </S.Group>
+        ))}
+      </Group>
 
-      <S.Copyright> Direitos Autorais Day3 - Desenvolvido por Unnameds </S.Copyright>
+      <S.Copyright>
+        Direitos Autorais Day3 - Desenvolvido por Unnameds{" "}
+      </S.Copyright>
     </>
-  </C.Container>
-)
+  </Container>
+);

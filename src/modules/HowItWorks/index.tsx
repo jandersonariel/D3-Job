@@ -1,31 +1,40 @@
-import React from "react"
+import React from "react";
 
-import * as C from '../../components';
-import * as A from '../../assets'
+import { Container, Group } from "library-caiol.sousa";
 
-import { MainContent } from './MainContent';
+import * as A from "../../assets";
 
-import * as S from './styles';
+import { MainContent } from "./MainContent";
+
+import * as S from "./styles";
 
 export const HowItWorks = () => (
-  <C.Container direction='column' width="block" maxWidth='block' padding={'0'}>
-    <S.Group>
-    
-      <S.ContainerImg 
-        transform='transform: translateY(10px)'
-        transformMobile='transform: translateY(3px)'
-      > 
-        <S.Img src={A.imgs.up_png} alt=""/>  
+  <Container direction="column" maxW="block">
+    <Group direction="column" maxW="block">
+      <S.ContainerImg
+        transform="transform: translateY(10px)"
+        transformMobile="transform: translateY(3px)"
+      >
+        <S.Img src={A.imgs.up_png} alt="" />
       </S.ContainerImg>
-    
-      <C.Container radius="none" justify="center" direction="column" bgColor="primary" width="block" maxWidth='block' minHeight={770}>
-        <MainContent/>
-      </C.Container>
-  
-      <S.ContainerImg>  
-        <S.Img src={A.imgs.down_png} alt=""/> 
-      </S.ContainerImg> 
-     
-    </S.Group>
-  </C.Container>
-)
+
+      <Container
+        radius="none"
+        justify="center"
+        maxW="block"
+        direction="column"
+        align="center"
+        mobileResponsive
+        pos="relative"
+        minH={770}
+        bgColor="#5A5A5A"
+      >
+        <MainContent />
+      </Container>
+
+      <S.ContainerImg>
+        <S.Img src={A.imgs.down_png} alt="" />
+      </S.ContainerImg>
+    </Group>
+  </Container>
+);

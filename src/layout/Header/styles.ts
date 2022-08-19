@@ -15,7 +15,7 @@ export const ContainerLogo = styled.span`
   svg {
     width: 70px;
     height: 25px;
-  } 
+  }
 
   @media (${medias.xXsmall}) {
     svg {
@@ -23,7 +23,7 @@ export const ContainerLogo = styled.span`
       height: 35px;
     }
   }
-  
+
   @media (${medias.small}) {
     svg {
       width: 150px;
@@ -49,4 +49,3 @@ export const ContainerLogo = styled.span`
 export const MenuOpc = styled.div`
   max-width: max-content;
 `;
-

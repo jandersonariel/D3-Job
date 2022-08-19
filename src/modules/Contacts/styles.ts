@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Image from 'next/image'
+import Image from "next/image";
 import { colors, fonts } from "../../global";
 
 export const ContainerImg = styled.span`
@@ -20,13 +20,6 @@ export const Title = styled.h2`
   color: ${colors.primary};
 `;
 
-export const Group = styled.span`
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 0 0 40px 0;
-`;
-
 export const SubGroup = styled.a`
   display: flex;
   align-items: center;
@@ -39,7 +32,7 @@ export const SubGroup = styled.a`
   text-decoration: none;
 
   :hover {
-    color: ${colors.blue}
+    color: ${colors.blue};
   }
 `;
 
