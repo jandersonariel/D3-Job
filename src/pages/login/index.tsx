@@ -3,11 +3,11 @@ import React from "react";
 
 import { Header } from "../../layout";
 
-import MenuOpc from "./menuOpc";
+import { LoginOpc } from "./loginOpc";
 
 const Login = () => (
   <>
-    <Header menuOpc={<MenuOpc />} />
+    <Header menuOpc={<LoginOpc />} />
     <div>
       <h1>bem vindo a tela de login</h1>
     </div>

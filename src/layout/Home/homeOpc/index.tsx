@@ -6,12 +6,12 @@ import * as C from "../../../components";
 import * as CT from "./content";
 import * as S from "./styles";
 
-export const MenuOpc: React.FC = () => (
+export const HomeOpc: React.FC = () => (
   <S.Container>
     <S.Group gap="28px">
-      {CT.help.map(({ link, name, id }, i) => (
-        <NextLink href={link}>
-          <S.Link key={`home-${id}`}>{name}</S.Link>
+      {CT.help.map(({ link, name }, i) => (
+        <NextLink href={link} key={name}>
+          <S.Link>{name}</S.Link>
         </NextLink>
       ))}
     </S.Group>

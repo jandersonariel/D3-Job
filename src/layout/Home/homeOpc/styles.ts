@@ -5,7 +5,7 @@ interface styleProps {
   gap?: string;
 }
 
-export const Container = styled.div`
+export const Container = styled.nav`
   display: none;
   gap: 64px;
 
@@ -14,7 +14,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Group = styled.nav<styleProps>`
+export const Group = styled.span<styleProps>`
   display: flex;
   align-items: center;
   justify-content: center;

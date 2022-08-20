@@ -4,10 +4,8 @@ import NextLink from "next/link";
 
 import * as S from "./styles";
 
-const MenuOpc = () => (
+export const LoginOpc = () => (
   <NextLink href="/">
     <S.Link>login</S.Link>
   </NextLink>
 );
-
-export default MenuOpc;
