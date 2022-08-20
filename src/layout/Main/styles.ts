@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { medias } from "../../global";
 
-export const Container = styled.main`
+export const Main = styled.main`
   display: flex;
   justify-content: center;
 
