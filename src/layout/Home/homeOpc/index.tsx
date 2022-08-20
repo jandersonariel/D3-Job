@@ -17,15 +17,15 @@ export const HomeOpc: React.FC = () => (
     </S.Group>
 
     <S.Group gap="12px">
-      <NextLink href={CT.login[0].link}>
-        <S.Link> {CT.login[0].name} </S.Link>
+      <NextLink href={CT.registration[0].link}>
+        <S.Link> {CT.registration[0].name} </S.Link>
       </NextLink>
 
       <C.Button
         color="white"
-        font={CT.login[1].font}
-        size={CT.login[1].size}
-        title={CT.login[1].name}
+        font={CT.registration[1].font}
+        size={CT.registration[1].size}
+        title={CT.registration[1].name}
       />
     </S.Group>
   </S.Container>

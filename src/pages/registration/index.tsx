@@ -6,14 +6,14 @@ import * as A from "../../assets";
 import { Header } from "../../layout";
 import { Button } from "../../components";
 
-import { LoginOpc } from "./loginOpc";
+import { RegistrationOpc } from "./registrationOpc";
 import { imgButtons } from "./content";
 
 import * as S from "./styles";
 
-const Login = () => (
+const Registration = () => (
   <>
-    <Header menuOpc={<LoginOpc />} />
+    <Header menuOpc={<RegistrationOpc />} />
     <Container
       direction="column"
       pad={[15, 20, 15, 20]}
@@ -69,4 +69,4 @@ const Login = () => (
   </>
 );
 
-export default Login;
+export default Registration;

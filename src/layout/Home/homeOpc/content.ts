@@ -11,10 +11,10 @@ export const help: OpcsProps = [
   },
 ];
 
-export const login: OpcsProps = [
+export const registration: OpcsProps = [
   {
     name: "ENTRAR",
-    link: "/login",
+    link: "/registration",
   },
   {
     name: "REGISTRAR-SE",
