@@ -9,7 +9,7 @@ import { MainContent } from "./MainContent";
 import * as S from "./styles";
 
 export const HowItWorks = () => (
-  <Container direction="column" maxW="block">
+  <Container maxW="block">
     <Group direction="column" maxW="block">
       <S.ContainerImg
         transform="transform: translateY(10px)"
@@ -19,12 +19,10 @@ export const HowItWorks = () => (
       </S.ContainerImg>
 
       <Container
-        radius="none"
         maxW="block"
         minH={770}
-        pad={{ top: 10, left: 15, right: 15, bottom: 10 }}
+        pad={[10, 15, 15, 10]}
         bgColor="#5A5A5A"
-        justify="center"
       >
         <MainContent />
       </Container>

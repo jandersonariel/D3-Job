@@ -11,12 +11,10 @@ export const Contacts = () => (
   <Container
     justify="space-between"
     pos="relative"
-    align="center"
-    direction="column"
     maxW="default"
     mobileResponsive
-    gap={{ desktop: 30, mobile: 15 }}
-    pad={{ top: 20, bottom: 30, left: 50, right: 50 }}
+    gap={[30, 15]}
+    pad={[20, 30, 50, 50]}
   >
     <>
       <S.ContainerImg id="contact">
@@ -26,8 +24,8 @@ export const Contacts = () => (
       <Group
         direction="column"
         maxW="max-content"
-        gap={{ desktop: 10 }}
-        pad={{ top: 0, left: 0, bottom: 40, right: 0 }}
+        gap={[10, 10]}
+        pad={[0, 0, 40, 0]}
       >
         <S.Title> Contatos </S.Title>
 

@@ -8,15 +8,12 @@ import * as S from "./styles";
 
 export const MainContent = () => (
   <Container
-    radius="none"
     maxW={1366}
-    direction="column"
-    justify="center"
     align="flex-end"
     mobileResponsive
     pos="relative"
     minH={770}
-    gap={{ desktop: 30 }}
+    gap={[30, 30]}
   >
     <>
       <S.Paragraph id="how">

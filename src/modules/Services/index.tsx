@@ -9,13 +9,10 @@ import * as S from "./styles";
 
 export const Services = () => (
   <Container
-    align="center"
-    justify="center"
-    direction="column"
     mobileResponsive
     maxW={1266}
-    gap={{ desktop: 130, mobile: 20 }}
-    pad={{ top: 10, left: 15, right: 15, bottom: 10 }}
+    gap={[130, 20]}
+    pad={[10, 15, 15, 10]}
   >
     <>
       <S.ContainerWall>
@@ -25,7 +22,7 @@ export const Services = () => (
       <S.CustomGroup
         direction="column"
         align="center"
-        gap={{ desktop: 35 }}
+        gap={[35, 35]}
         maxW="block"
       >
         {CT.imgButtons.map(({ name, icon }) => (
