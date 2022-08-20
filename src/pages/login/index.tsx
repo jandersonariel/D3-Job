@@ -6,7 +6,12 @@ import { Header } from "../../layout";
 import MenuOpc from "./menuOpc";
 
 const Login = () => (
-  <Container maxW="block" justify="flex-start" gap={[20, 30]}>
+  <Container
+    maxW="block"
+    justify="flex-start"
+    direction="column"
+    gap={[20, 30]}
+  >
     <>
       <Header menuOpc={<MenuOpc />} />
       <div>
