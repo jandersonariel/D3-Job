@@ -3,8 +3,8 @@ import React from "react";
 export const Perfil = () => (
   <svg
     width="63"
-    height="43"
-    viewBox="0 0 63 43"
+    height="68"
+    viewBox="0 0 63 68"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >

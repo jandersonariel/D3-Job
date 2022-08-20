@@ -1,16 +1,11 @@
 import { ReactNode } from "react";
 import { sizeProps, colorProps, fontProps, weightProps } from "../../../global";
 
-export interface ButtonProps {
+export interface ButtonProps extends ButtonStyles {
   title: string;
   children?: ReactNode;
   disabled?: boolean;
-  height?: number;
-  size?: sizeProps;
-  font?: fontProps;
-  color?: colorProps;
   isLoading?: boolean;
-  weight?: weightProps;
 }
 
 export interface ButtonStyles {
@@ -19,4 +14,5 @@ export interface ButtonStyles {
   font?: fontProps;
   color?: colorProps;
   weight?: weightProps;
+  pad?: string;
 }

@@ -14,11 +14,6 @@ export const ContainerWall = styled.span`
     height: 300px;
   }
 
-  /* svg {
-    width: 354px;
-    height: 349px;
-  } */
-
   @media (${medias.small}) {
     svg {
       width: 454px;

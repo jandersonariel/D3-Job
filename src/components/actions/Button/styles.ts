@@ -20,11 +20,12 @@ export const Container = styled.button<ButtonStyles>`
   width: ${sizes.block};
   height: ${({ height }) => (height ? `${height}px` : "max-content")};
 
-  padding: 15px;
+  padding: ${({ pad }) => pad || "15px"};
 
   border-radius: 16px;
   cursor: pointer;
   outline: 0;
+  gap: 15px;
 
   :hover {
     opacity: 0.7;

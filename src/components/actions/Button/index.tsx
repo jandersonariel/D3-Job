@@ -7,22 +7,10 @@ import * as S from "./styles";
 export const Button = ({
   title,
   children,
-  disabled,
   isLoading,
-  size,
-  height,
-  font,
-  color,
-  weight,
+  ...rest
 }: ButtonProps) => (
-  <S.Container
-    disabled={disabled}
-    size={size}
-    height={height}
-    font={font}
-    color={color}
-    weight={weight}
-  >
+  <S.Container {...rest}>
     {isLoading ? (
       <ClipLoader size={16} />
     ) : (
