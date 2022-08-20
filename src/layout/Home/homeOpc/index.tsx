@@ -9,7 +9,7 @@ import * as S from "./styles";
 export const HomeOpc: React.FC = () => (
   <S.Container>
     <S.Group gap="28px">
-      {CT.help.map(({ link, name }, i) => (
+      {CT.help.map(({ link, name }) => (
         <NextLink href={link} key={name}>
           <S.Link>{name}</S.Link>
         </NextLink>

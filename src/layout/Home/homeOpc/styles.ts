@@ -26,6 +26,7 @@ export const Link = styled.a`
   color: ${colors.primary};
   font-weight: ${fonts.weight.bold};
   font-size: ${fonts.sizes.medium};
+  cursor: pointer;
 
   :hover {
     color: ${colors.blue};
