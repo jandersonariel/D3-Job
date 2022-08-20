@@ -32,7 +32,7 @@ export const Contacts = () => (
         {CT.contatos.map(({ img, id, name, url }) => (
           <S.SubGroup key={id} href={url} target="_blank">
             <S.Logo>
-              <S.Img src={img} alt="" />
+              <S.Img src={img} alt={`${id}icon`} />
             </S.Logo>
 
             {name}
