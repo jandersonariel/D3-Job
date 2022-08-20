@@ -12,7 +12,6 @@ export const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider theme={colors}>
-        <Header />
         <Main>
           <Component {...pageProps} />
         </Main>

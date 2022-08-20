@@ -4,9 +4,14 @@ import { Container } from "library-caiol.sousa";
 
 import { Services, HowItWorks, Contacts } from "../../modules";
 
+import { Header } from "../Header";
+
+import { MenuOpc } from "./MenuOpc";
+
 export const Home = () => (
-  <Container direction="column" maxW="block" gap={{ desktop: 20, mobile: 30 }}>
+  <Container maxW="block" gap={[20, 30]}>
     <>
+      <Header menuOpc={<MenuOpc />} />
       <Services />
       <HowItWorks />
       <Contacts />

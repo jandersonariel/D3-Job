@@ -2,8 +2,6 @@ import React from "react";
 
 import * as C from "../../components";
 
-import { MenuOpc } from "./MenuOpc";
-
 import * as I from "./interface";
 import * as S from "./styles";
 
@@ -13,6 +11,6 @@ export const Header = ({ menuOpc }: I.HeaderProps) => (
       <C.Logo />
     </S.ContainerLogo>
 
-    <S.MenuOpc>{menuOpc || <MenuOpc />}</S.MenuOpc>
+    <S.MenuOpc>{menuOpc}</S.MenuOpc>
   </S.Container>
 );
