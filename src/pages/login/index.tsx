@@ -14,7 +14,12 @@ import * as S from "./styles";
 const Login = () => (
   <>
     <Header menuOpc={<LoginOpc />} />
-    <Container direction="column" pad={[15, 20, 15, 20]} gap={[70, 50]}>
+    <Container
+      direction="column"
+      pad={[15, 20, 15, 20]}
+      gap={[70, 50]}
+      minH={433}
+    >
       <>
         <S.Heading>
           Vamos criar a conta. <br />
