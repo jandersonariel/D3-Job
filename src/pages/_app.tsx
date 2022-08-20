@@ -4,7 +4,7 @@ import { ThemeProvider } from "styled-components";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { GlobalStyle, colors } from "../global";
 
-import { Header, Main } from "../layout";
+import { Main } from "../layout";
 
 export const MyApp = ({ Component, pageProps }: AppProps) => {
   const queryClient = new QueryClient();

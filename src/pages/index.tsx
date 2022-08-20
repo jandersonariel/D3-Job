@@ -1,6 +1,6 @@
-import React from 'react';
-import { Home } from '../layout';
+import React from "react";
+import { Home } from "../layout";
 
-const Base: React.FC = () => <Home/>;
- 
+const Base: React.FC = () => <Home />;
+
 export default Base;

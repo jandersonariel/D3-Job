@@ -1,4 +1,5 @@
 import React from "react";
+import NextLink from "next/link";
 
 import * as C from "../../../components";
 
@@ -9,9 +10,9 @@ export const MenuOpc: React.FC = () => (
   <S.Container>
     <S.Group gap="28px">
       {CT.help.map((v) => (
-        <S.Link key={v.name} href={v.link}>
-          {v.name}
-        </S.Link>
+        <NextLink href={v.link}>
+          <S.Link key={v.name}>{v.name}</S.Link>
+        </NextLink>
       ))}
     </S.Group>
 
