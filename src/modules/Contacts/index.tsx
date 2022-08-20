@@ -18,7 +18,7 @@ export const Contacts = () => (
   >
     <>
       <S.ContainerImg id="contact">
-        <S.Img src={A.imgs.peopleTalk} alt="" />
+        <S.Img priority src={A.imgs.peopleTalk} alt="peopleTalk" />
       </S.ContainerImg>
 
       <Group
@@ -32,7 +32,7 @@ export const Contacts = () => (
         {CT.contatos.map(({ img, id, name, url }) => (
           <S.SubGroup key={id} href={url} target="_blank">
             <S.Logo>
-              <S.Img src={img} alt={`${id}icon`} />
+              <S.Img priority src={img} alt={`${id}icon`} />
             </S.Logo>
 
             {name}

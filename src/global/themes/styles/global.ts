@@ -15,12 +15,10 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body, #__next {
-    background: ${colors.white};
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
   }
 
   div, header, footer, main {

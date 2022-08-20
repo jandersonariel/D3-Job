@@ -11,6 +11,6 @@ export const Header = ({ menuOpc }: I.HeaderProps) => (
       <C.Logo />
     </S.ContainerLogo>
 
-    <S.MenuOpc>{menuOpc}</S.MenuOpc>
+    <S.MenuOpc>{menuOpc || <h1> colocar a navegação </h1>}</S.MenuOpc>
   </S.Container>
 );

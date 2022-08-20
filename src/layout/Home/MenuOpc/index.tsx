@@ -9,15 +9,18 @@ import * as S from "./styles";
 export const MenuOpc: React.FC = () => (
   <S.Container>
     <S.Group gap="28px">
-      {CT.help.map((v) => (
-        <NextLink href={v.link}>
-          <S.Link key={v.name}>{v.name}</S.Link>
+      {CT.help.map(({ link, name, id }, i) => (
+        <NextLink href={link}>
+          <S.Link key={`home-${id}`}>{name}</S.Link>
         </NextLink>
       ))}
     </S.Group>
 
     <S.Group gap="12px">
-      <S.Link href={CT.login[0].link}> {CT.login[0].name} </S.Link>
+      <NextLink href={CT.login[0].link}>
+        <S.Link> {CT.login[0].name} </S.Link>
+      </NextLink>
+
       <C.Button
         color="white"
         font={CT.login[1].font}

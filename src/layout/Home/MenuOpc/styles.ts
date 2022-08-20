@@ -14,7 +14,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Group = styled.span<styleProps>`
+export const Group = styled.nav<styleProps>`
   display: flex;
   align-items: center;
   justify-content: center;

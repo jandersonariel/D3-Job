@@ -15,7 +15,7 @@ export const HowItWorks = () => (
         transform="transform: translateY(10px)"
         transformMobile="transform: translateY(3px)"
       >
-        <S.Img src={A.imgs.up_png} alt="" />
+        <S.Img priority src={A.imgs.up_png} alt="upImg" />
       </S.ContainerImg>
 
       <Container
@@ -28,7 +28,7 @@ export const HowItWorks = () => (
       </Container>
 
       <S.ContainerImg>
-        <S.Img src={A.imgs.down_png} alt="" />
+        <S.Img priority src={A.imgs.down_png} alt="dowmImg" />
       </S.ContainerImg>
     </Group>
   </Container>

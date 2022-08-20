@@ -69,7 +69,7 @@ export const MainContent = () => (
       </S.Paragraph>
 
       <S.CustomGroup flex-direction="column" align="center" maxW={462}>
-        <S.Img src={A.imgs.graphs} alt="" />
+        <S.Img priority src={A.imgs.graphs} alt="grafics" />
       </S.CustomGroup>
     </>
   </Container>

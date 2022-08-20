@@ -25,9 +25,9 @@ export const Services = () => (
         gap={[35, 35]}
         maxW="block"
       >
-        {CT.imgButtons.map(({ name, icon }) => (
+        {CT.imgButtons.map(({ name, icon, id }) => (
           <C.Button
-            key={name}
+            key={id}
             weight="regular"
             color="white"
             font="large"
