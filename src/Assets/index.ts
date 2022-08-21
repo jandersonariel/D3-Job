@@ -7,6 +7,7 @@ import facebook from "./facebook.png";
 import google_mail from "./google_mail.png";
 import instagram from "./instagram.png";
 import whatsapp from "./whatsapp.png";
+import logoUnnameds from "./logoUnnameds.png";
 
 export const imgs = {
   up_png,
@@ -18,4 +19,5 @@ export const imgs = {
   google_mail,
   instagram,
   whatsapp,
+  logoUnnameds,
 };
