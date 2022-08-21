@@ -14,6 +14,10 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body, #__next {
     width: 100vw;
     display: flex;
