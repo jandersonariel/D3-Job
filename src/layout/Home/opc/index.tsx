@@ -6,7 +6,7 @@ import * as C from "../../../components";
 import * as CT from "./content";
 import * as S from "./styles";
 
-export const HomeOpc: React.FC = () => (
+export const Opc: React.FC = () => (
   <S.Container>
     <S.Group gap="28px">
       {CT.help.map(({ link, name }) => (

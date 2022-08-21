@@ -15,12 +15,15 @@ export const Divider = styled.div`
   width: 100%;
   background: #d9d9d9;
   height: 26px;
+  display: flex;
+  align-items: center;
 
   h2 {
     width: 100%;
     max-width: 1280px;
     text-align: right;
     margin-right: 22px;
+    font-size: ${fonts.sizes.small};
   }
 `;
 

@@ -4,11 +4,11 @@ import { Services, HowItWorks, Contacts } from "../../modules";
 
 import { Header } from "../Header";
 
-import { HomeOpc } from "./homeOpc";
+import { Opc } from "./opc";
 
 export const Home = () => (
   <>
-    <Header menuOpc={<HomeOpc />} />
+    <Header menuOpc={<Opc />} />
     <Services />
     <HowItWorks />
     <Contacts />

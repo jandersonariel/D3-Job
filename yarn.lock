@@ -7272,10 +7272,10 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-library-caiol.sousa@^0.0.21:
-  version "0.0.21"
-  resolved "https://registry.yarnpkg.com/library-caiol.sousa/-/library-caiol.sousa-0.0.21.tgz#f938e1afcbc468f58fcee8227f3de030e9450e67"
-  integrity sha512-uluTvnnn22Dx5E0oioqqYa6srJFVHZbgl1Txi1N7pKU2MVOpnSWUoDeVHwmSuDU5kuojPP6cDFfFp4kpXcEbLA==
+library-caiol.sousa@^0.0.22:
+  version "0.0.22"
+  resolved "https://registry.yarnpkg.com/library-caiol.sousa/-/library-caiol.sousa-0.0.22.tgz#bb745540c785da00fa7fee9dda525a3d82d70310"
+  integrity sha512-FLaw/vRlRtIIpOJtmmgFyDmAKpcDXqPVa/77Cl7afdCgew4T7BJ8zpvmRyJH9sMI+lTU1NGvWlW57TKWQdZBiA==
   dependencies:
     card-validator "^8.1.1"
     cpf-cnpj-validator "^1.0.3"

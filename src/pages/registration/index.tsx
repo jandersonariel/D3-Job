@@ -1,4 +1,5 @@
 import React from "react";
+import NextLink from "next/link";
 
 import { Container, Group } from "library-caiol.sousa";
 
@@ -6,14 +7,14 @@ import * as A from "../../assets";
 import { Header } from "../../layout";
 import { Button } from "../../components";
 
-import { RegistrationOpc } from "./registrationOpc";
+import { Opc } from "./Opc";
 import { imgButtons } from "./content";
 
 import * as S from "./styles";
 
 const Registration = () => (
   <>
-    <Header menuOpc={<RegistrationOpc />} />
+    <Header menuOpc={<Opc href="/" label="login" />} />
     <Container direction="column" pad={[15, 20, 15, 20]} gap={[70, 50]}>
       <>
         <S.Heading>
@@ -28,29 +29,33 @@ const Registration = () => (
           gap={[200, 100]}
         >
           <>
-            {imgButtons.map(({ name, icon, description, pad }) => (
+            {imgButtons.map(({ name, icon, description, pad, href }) => (
               <Group
                 maxW="max-content"
                 direction="column"
                 align="center"
                 gap={pad}
+                key={name}
               >
                 <S.Description
                   dangerouslySetInnerHTML={{ __html: description }}
                 />
 
-                <Button
-                  key={name}
-                  weight="regular"
-                  color="white"
-                  font="large"
-                  size="variant"
-                  height={180}
-                  title={name}
-                  pad="15px 60px"
-                >
-                  {icon}
-                </Button>
+                <NextLink href={href}>
+                  <S.Link>
+                    <Button
+                      weight="regular"
+                      color="white"
+                      font="large"
+                      size="variant"
+                      height={180}
+                      title={name}
+                      pad="15px 60px"
+                    >
+                      {icon}
+                    </Button>
+                  </S.Link>
+                </NextLink>
               </Group>
             ))}
           </>
