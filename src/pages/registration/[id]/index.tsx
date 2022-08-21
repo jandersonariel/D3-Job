@@ -1,11 +1,9 @@
 /* eslint-disable no-constant-condition */
 import React from "react";
-import { useRouter } from "next/router";
 import { FormikProvider, useFormik } from "formik";
 
 import { Container, Group, Input } from "library-caiol.sousa";
 
-import { GetStaticPaths, GetStaticProps } from "next";
 import { Button } from "../../../components";
 import { Header } from "../../../layout";
 
