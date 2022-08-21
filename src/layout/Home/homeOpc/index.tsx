@@ -21,12 +21,18 @@ export const HomeOpc: React.FC = () => (
         <S.Link> {CT.registration[0].name} </S.Link>
       </NextLink>
 
-      <C.Button
-        color="white"
-        font={CT.registration[1].font}
-        size={CT.registration[1].size}
-        title={CT.registration[1].name}
-      />
+      <NextLink href={CT.registration[1].link}>
+        <S.Link>
+          <C.Button
+            pad="0"
+            height={53}
+            color="white"
+            font={CT.registration[1].font}
+            size={CT.registration[1].size}
+            title={CT.registration[1].name}
+          />
+        </S.Link>
+      </NextLink>
     </S.Group>
   </S.Container>
 );

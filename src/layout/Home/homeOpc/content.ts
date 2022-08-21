@@ -14,11 +14,11 @@ export const help: OpcsProps = [
 export const registration: OpcsProps = [
   {
     name: "ENTRAR",
-    link: "/registration",
+    link: "",
   },
   {
     name: "REGISTRAR-SE",
-    link: "",
+    link: "/registration",
     size: "variant",
     font: "large",
   },

@@ -88,12 +88,12 @@ export const Logo = styled.span`
 `;
 
 export const Title = styled.h3`
-  font-size: ${fonts.sizes.regular};
+  font-size: ${fonts.sizes.medium};
   font-weight: ${fonts.weight.semiBlack};
 `;
 
 export const Paragraph = styled.p`
-  font-size: ${fonts.sizes.small};
+  font-size: ${fonts.sizes.regular};
 `;
 
 export const Unnameds = styled.span`
