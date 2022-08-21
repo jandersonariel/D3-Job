@@ -13,7 +13,7 @@ import * as S from "../styles";
 import * as I from "./interface";
 import * as F from "./form";
 
-export async function getStaticProps(context: { params: { id: string } }) {
+export async function getStaticProps({ context }: I.GetStaticProps) {
   const { id } = context.params;
   return { props: { id } };
 }
