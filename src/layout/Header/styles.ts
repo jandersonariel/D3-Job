@@ -11,7 +11,8 @@ export const Container = styled.header`
   padding: 40px 10px;
 `;
 
-export const ContainerLogo = styled.span`
+export const ContainerLogo = styled.a`
+  cursor: pointer;
   svg {
     width: 70px;
     height: 25px;
