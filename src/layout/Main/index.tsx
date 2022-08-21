@@ -11,7 +11,9 @@ export const Main: React.FC<I.MainProps> = ({ children }) => (
       justify="flex-start"
       direction="column"
       maxW="block"
+      pos="relative"
       gap={[20, 30]}
+      minH="100vh"
     >
       {children}
     </Container>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Image from "next/image";
 
-import { colors, fonts } from "../../global";
+import { colors, fonts, medias } from "../../global";
 
 export const Link = styled.a`
   text-decoration: none;
@@ -21,7 +21,7 @@ export const Heading = styled.h1`
 
 export const Description = styled.p`
   text-align: center;
-  width: 270px;
+  width: 275px;
 `;
 
 export const ContainerImg = styled.span`
@@ -29,6 +29,11 @@ export const ContainerImg = styled.span`
   span {
     width: 100% !important;
   }
+
+  @media (${medias.xLmedium}) {
+    position: absolute;
+    bottom: -5px;
+  } ;
 `;
 
 export const Img = styled(Image)`
