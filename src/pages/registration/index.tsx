@@ -7,7 +7,7 @@ import * as A from "../../assets";
 import { Header } from "../../layout";
 import { Button } from "../../components";
 
-import { Opc } from "./Opc";
+import { Opc } from "./opc";
 import { imgButtons } from "./content";
 
 import * as S from "./styles";

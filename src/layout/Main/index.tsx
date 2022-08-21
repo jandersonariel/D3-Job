@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container } from "library-caiol.sousa";
+import { Container, Loading } from "library-caiol.sousa";
 
 import * as I from "./interface";
 import * as S from "./styles";

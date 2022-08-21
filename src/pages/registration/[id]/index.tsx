@@ -5,18 +5,39 @@ import { FormikProvider, useFormik } from "formik";
 
 import { Container, Group, Input } from "library-caiol.sousa";
 
-import { Button } from "../../components";
-import { Header } from "../../layout";
+import { GetStaticPaths, GetStaticProps } from "next";
+import { Button } from "../../../components";
+import { Header } from "../../../layout";
 
-import { Opc } from "./Opc";
+import { Opc } from "../opc";
 
+import * as S from "../styles";
+import * as I from "./interface";
 import * as F from "./form";
-import * as S from "./styles";
 
-const Registration = () => {
-  const router = useRouter();
-  const query = router.query.id;
+export async function getStaticProps(context: { params: { id: string } }) {
+  const { id } = context.params;
+  return { props: { id } };
+}
 
+export async function getStaticPaths() {
+  const paths = [
+    {
+      params: {
+        id: "client",
+      },
+    },
+    {
+      params: {
+        id: "provider",
+      },
+    },
+  ];
+
+  return { paths, fallback: false };
+}
+
+const ClientOrProvider = ({ id }: I.ClientOrProviderProps) => {
   const onSubmit = (): void => console.log(form.values);
 
   const form = useFormik({
@@ -38,7 +59,7 @@ const Registration = () => {
     onSubmit,
   });
 
-  return query === "client" || "provider" ? (
+  return (
     <>
       <Header menuOpc={<Opc href="/registration" label="voltar" />} />
       <Container
@@ -48,8 +69,8 @@ const Registration = () => {
         gap={[30, 50]}
       >
         <>
-          {query === "client" && <h1> REGISTRANDO-SE COMO CLIENTE </h1>}
-          {query === "provider" && <h1> REGISTRANDO-SE COMO PRESTADOR </h1>}
+          {id === "client" && <h1> REGISTRANDO-SE COMO CLIENTE </h1>}
+          {id === "provider" && <h1> REGISTRANDO-SE COMO PRESTADOR </h1>}
           <FormikProvider value={form}>
             <S.Form onSubmit={form.handleSubmit}>
               <Container mobileResponsive align="flex-start" gap={[130, 20]}>
@@ -87,7 +108,7 @@ const Registration = () => {
         </>
       </Container>
     </>
-  ) : null;
+  );
 };
 
-export default Registration;
+export default ClientOrProvider;
