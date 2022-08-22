@@ -9,10 +9,11 @@ import { Header } from "../../../layout";
 
 import { Opc } from "../opc";
 
-import * as S from "../styles";
+import { paths } from "./content";
+
+import * as S from "./styles";
 import * as I from "./interface";
 import * as F from "./form";
-import { paths } from "./content";
 
 export async function getStaticPaths() {
   return { paths, fallback: false };

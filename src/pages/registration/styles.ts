@@ -39,13 +39,3 @@ export const ContainerImg = styled.span`
 export const Img = styled(Image)`
   width: 100%;
 `;
-
-export const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-
-  width: 100%;
-`;
