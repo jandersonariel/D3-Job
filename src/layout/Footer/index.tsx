@@ -30,9 +30,9 @@ export const Footer = () => (
           justify="space-between"
         >
           <>
-            <Container direction="row" justify="space-between" gap={[80, 50]}>
+            <Container mobileResponsive justify="space-between" gap={[80, 50]}>
               <>
-                <Group direction="column">
+                <Group direction="column" maxW="max-content">
                   {CT.day3.map(({ img, id, name, url }) => (
                     <S.SubGroup key={id} href={url} target="_blank">
                       <S.Logo>

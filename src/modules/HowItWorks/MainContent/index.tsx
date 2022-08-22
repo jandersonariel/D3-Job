@@ -45,15 +45,11 @@ export const MainContent = () => (
           prestar serviços
           <br />
           se registre no site como Prestador e caso queira contratar registre-se
-          no site como um
-          <br />
-          cliente.
+          no site como um cliente.
           <br />
           <br />
           Com um sistema de feedback para ambos os lados, tanto para quem pediu
-          o serviço e
-          <br />
-          quem o executou.
+          o serviço e quem o executou.
           <br />
           <br />
           Caso tenha alguma duvida, sugestão e feedback, envie um e-mail para:
