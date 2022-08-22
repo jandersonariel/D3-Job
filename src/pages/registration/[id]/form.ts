@@ -3,7 +3,6 @@ import { Inputs } from "library-caiol.sousa";
 export const inputs1: Inputs[] = [
   {
     name: "name",
-    mask: "name",
     label: {
       name: "Nome Completo",
       bold: true,
@@ -11,6 +10,7 @@ export const inputs1: Inputs[] = [
   },
   {
     name: "cpf_cnpj",
+    mask: "cpf_cnpj",
     label: {
       name: "CPF ou CNPJ",
       bold: true,
@@ -18,6 +18,7 @@ export const inputs1: Inputs[] = [
   },
   {
     name: "phone",
+    mask: "phone",
     label: {
       name: "Telefone",
       bold: true,
@@ -67,7 +68,7 @@ export const inputs2: Inputs[] = [
   },
   {
     name: "cep",
-    mask: "billingZipCode",
+    mask: "cep",
     label: {
       name: "CEP",
       bold: true,
