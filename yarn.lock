@@ -7272,14 +7272,13 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-library-caiol.sousa@^0.0.23:
-  version "0.0.23"
-  resolved "https://registry.yarnpkg.com/library-caiol.sousa/-/library-caiol.sousa-0.0.23.tgz#91305e931571bafe2ea88f84925c61b5291fdf5a"
-  integrity sha512-6D41/pUwQRQxiaD+PMk1FzVeo/+SkH6a2st6tl3sT1FA6wbcg7rBZz17o0/mdHtu3t1c5vJRmsJYiU34uWTWxw==
+library-caiol.sousa@^0.0.24:
+  version "0.0.24"
+  resolved "https://registry.yarnpkg.com/library-caiol.sousa/-/library-caiol.sousa-0.0.24.tgz#7a40254600536b972968166e0de5f17123d75457"
+  integrity sha512-iMgJt2jzChx8Z5hjtEwpdXkEdPD+0g2fVt1oYUNdeQup1Bb5QCKhJVmYD3OiH8RgdlPbxk/nMOaVMOWMgw05/w==
   dependencies:
-    card-validator "^8.1.1"
-    cpf-cnpj-validator "^1.0.3"
     formik "^2.2.9"
+    next "12.1.6"
     react "^18.2.0"
     react-dom "^18.2.0"
     react-icons "^4.4.0"
@@ -7287,9 +7286,8 @@ library-caiol.sousa@^0.0.23:
     react-refresh-webpack-plugin "^0.1.0"
     react-router-dom "^6.3.0"
     react-scripts "5.0.1"
-    react-text-mask "^5.4.3"
     styled-components "^5.1.0"
-    text-mask-addons "^3.8.0"
+    ts-remask "^0.2.0"
     tsc-alias "^1.7.0"
     tsconfig-paths-webpack-plugin "^4.0.0"
     use-breakpoint "^3.0.3"
@@ -10809,6 +10807,13 @@ tryer@^1.0.1:
   resolved "https://registry.yarnpkg.com/tryer/-/tryer-1.0.1.tgz#f2c85406800b9b0f74c9f7465b81eaad241252f8"
   integrity sha512-c3zayb8/kWWpycWYg87P71E1S1ZL6b6IJxfb5fvsUgsf0S2MVGaDhDXXjDMpdCpfWXqptc+4mXwmiy1ypXqRAA==
 
+ts-remask@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/ts-remask/-/ts-remask-0.2.0.tgz#6d259cea9ac6790ff276e32e40d9c03764752e51"
+  integrity sha512-c4XpbU2YeESHwGgiixzzogKLQBw6/EqI6msuFAXA1C+Jws88lh++zxPzJICB6d+V+bhIT4hIuCxbuHRWPvyYXA==
+  dependencies:
+    vanilla-masker "^1.2.0"
+
 tsc-alias@^1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/tsc-alias/-/tsc-alias-1.7.0.tgz#733482751133a25b97608ee424f8a1f085fcaaef"
@@ -11163,6 +11168,11 @@ v8-to-istanbul@^8.1.0:
     "@types/istanbul-lib-coverage" "^2.0.1"
     convert-source-map "^1.6.0"
     source-map "^0.7.3"
+
+vanilla-masker@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/vanilla-masker/-/vanilla-masker-1.2.0.tgz#c2830e9d994a5fecd2261506477c2707fe589756"
+  integrity sha512-5SQeksiWaRYfbTaLVcqDPlvINGRt7ODbmWqqMMdT4GuZEC01KJm7FxaytscI5GZ9mlkTNQDwqllSHbv1ENxQEA==
 
 vary@~1.1.2:
   version "1.1.2"
