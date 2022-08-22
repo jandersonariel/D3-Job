@@ -13,26 +13,31 @@ import * as S from "../styles";
 import * as I from "./interface";
 import * as F from "./form";
 
-export async function getStaticProps({ context }: I.GetStaticProps) {
-  const { id } = context.params;
+// export async function getStaticProps({ context }: I.GetStaticProps) {
+//   const { id } = context.params;
+//   return { props: { id } };
+// }
+
+// export async function getStaticPaths() {
+//   const paths = [
+//     {
+//       params: {
+//         id: "client",
+//       },
+//     },
+//     {
+//       params: {
+//         id: "provider",
+//       },
+//     },
+//   ];
+
+//   return { paths, fallback: false };
+// }
+
+export async function getServerSideProps(context: I.context) {
+  const { id } = context.query;
   return { props: { id } };
-}
-
-export async function getStaticPaths() {
-  const paths = [
-    {
-      params: {
-        id: "client",
-      },
-    },
-    {
-      params: {
-        id: "provider",
-      },
-    },
-  ];
-
-  return { paths, fallback: false };
 }
 
 const ClientOrProvider = ({ id }: I.ClientOrProviderProps) => {
