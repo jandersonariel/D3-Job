@@ -1,11 +1,10 @@
 import React from "react";
-import NextLink from "next/link";
 
-import { Container, Group } from "library-caiol.sousa";
+import { Container, Group, Description } from "library-caiol.sousa";
 
 import * as A from "../../assets";
+import * as C from "../../components";
 import { Header } from "../../layout";
-import { Button } from "../../components";
 
 import { Opc } from "./opc";
 import { imgButtons } from "./content";
@@ -37,25 +36,21 @@ const Registration = () => (
                 gap={pad}
                 key={name}
               >
-                <S.Description
-                  dangerouslySetInnerHTML={{ __html: description }}
-                />
+                <Description text={description} align="center" width={275} />
 
-                <NextLink href={href}>
-                  <S.Link>
-                    <Button
-                      weight="regular"
-                      color="white"
-                      font="large"
-                      size="variant"
-                      height={180}
-                      title={name}
-                      pad="15px 60px"
-                    >
-                      {icon}
-                    </Button>
-                  </S.Link>
-                </NextLink>
+                <C.CustomLink href={href} label="" type="buttonLink">
+                  <C.Button
+                    weight="regular"
+                    color="white"
+                    font="large"
+                    size="variant"
+                    height={180}
+                    title={name}
+                    pad="15px 60px"
+                  >
+                    {icon}
+                  </C.Button>
+                </C.CustomLink>
               </Group>
             ))}
           </>
