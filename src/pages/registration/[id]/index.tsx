@@ -55,8 +55,10 @@ const ClientOrProvider = ({ id }: I.ClientOrProviderProps) => {
         gap={[30, 50]}
       >
         <>
-          {id === "client" && <h1> REGISTRANDO-SE COMO CLIENTE </h1>}
-          {id === "provider" && <h1> REGISTRANDO-SE COMO PRESTADOR </h1>}
+          <h1>
+            REGISTRANDO-SE COMO {id === "client" ? "CLIENTE" : "PRESTADOR"}
+          </h1>
+
           <FormikProvider value={form}>
             <S.Form onSubmit={form.handleSubmit}>
               <Container mobileResponsive align="flex-start" gap={[130, 20]}>
