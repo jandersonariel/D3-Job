@@ -12,31 +12,14 @@ import { Opc } from "../opc";
 import * as S from "../styles";
 import * as I from "./interface";
 import * as F from "./form";
+import { paths } from "./content";
 
-// export async function getStaticProps({ context }: I.GetStaticProps) {
-//   const { id } = context.params;
-//   return { props: { id } };
-// }
+export async function getStaticPaths() {
+  return { paths, fallback: false };
+}
 
-// export async function getStaticPaths() {
-//   const paths = [
-//     {
-//       params: {
-//         id: "client",
-//       },
-//     },
-//     {
-//       params: {
-//         id: "provider",
-//       },
-//     },
-//   ];
-
-//   return { paths, fallback: false };
-// }
-
-export async function getServerSideProps(context: I.context) {
-  const { id } = context.query;
+export async function getStaticProps(context: I.GetStaticProps) {
+  const { id } = context.params;
   return { props: { id } };
 }
 
