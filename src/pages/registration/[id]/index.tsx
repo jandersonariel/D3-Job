@@ -9,6 +9,7 @@ import { Header } from "../../../layout";
 
 import { Opc } from "../opc";
 
+import validationSchema from "./validations";
 import { paths } from "./content";
 
 import * as S from "./styles";
@@ -39,7 +40,7 @@ const ClientOrProvider = ({ id }: I.ClientOrProviderProps) => {
       passwordConfirm: "",
       cep: "",
     },
-    // validationSchema
+    validationSchema,
     validateOnChange: true,
     validateOnMount: true,
     validateOnBlur: true,

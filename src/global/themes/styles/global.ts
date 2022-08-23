@@ -32,7 +32,6 @@ export const GlobalStyle = createGlobalStyle`
 
   div {
     display: flex;
-    justify-content: center;
   }
 
   body, html {
