@@ -14,7 +14,7 @@ export const help: OpcsProps = [
 export const registration: OpcsProps = [
   {
     name: "ENTRAR",
-    link: "",
+    link: "/",
   },
   {
     name: "REGISTRAR-SE",
