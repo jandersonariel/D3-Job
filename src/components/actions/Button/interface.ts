@@ -5,6 +5,7 @@ export interface ButtonProps extends ButtonStyles {
   title: string;
   children?: ReactNode;
   disabled?: boolean;
+  type?: "button" | "submit" | "reset";
   isLoading?: boolean;
 }
 
