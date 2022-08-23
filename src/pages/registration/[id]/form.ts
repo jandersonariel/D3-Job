@@ -44,7 +44,7 @@ export const inputs1: Inputs[] = [
 
 export const inputs2: Inputs[] = [
   {
-    name: "mail",
+    name: "email",
     label: {
       name: "E-mail",
       bold: true,

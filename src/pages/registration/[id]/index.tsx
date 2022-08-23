@@ -35,7 +35,7 @@ const ClientOrProvider = ({ id }: I.ClientOrProviderProps) => {
       phone: "",
       cellphone: "",
       date: "",
-      mail: "",
+      email: "",
       password: "",
       passwordConfirm: "",
       cep: "",
