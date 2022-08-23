@@ -1,5 +1,9 @@
 import * as yup from "yup";
 
+import { regex } from "library-caiol.sousa";
+
+const { weakPassword, cpf_cnpj } = regex;
+
 const error = {
   name: "Insira seu nome completo.",
   cpf_cnpj: "Insira um cpf/cnpj válido.",
@@ -25,6 +29,11 @@ export default yup.object().shape({
     .min(11, error.cpf_cnpj)
     .test("cpf_cnpj", error.cpf_cnpj, (value) => {
       if (value) return value.trim().length >= 1;
+      return false;
+    })
+    .test("cpf_cnpj", error.cpf_cnpj, (value) => {
+      if (value) return value.length >= 1 && cpf_cnpj.test(value);
+
       return false;
     }),
 
@@ -71,19 +80,12 @@ export default yup.object().shape({
 
   password: yup
     .string()
-    .min(8, "Senha muito curta.")
     .test("password", error.password, (value) => {
       if (value) return value.trim().length >= 1;
       return false;
     })
     .test("password", "Senha muito fraca, coloque uma mais forte", (value) => {
-      if (value)
-        return (
-          value.length >= 1 &&
-          /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/.test(
-            value
-          )
-        );
+      if (value) return value.length >= 1 && weakPassword.test(value);
       return false;
     }),
 

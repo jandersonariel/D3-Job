@@ -56,8 +56,7 @@ export const inputs2: Inputs[] = [
     label: {
       name: "Senha",
       bold: true,
-      tooltip:
-        "Sua senha deve conter letras maisculas, numeros e caracteres especiais",
+      tooltip: "Sua senha deve conter letras maisculas, minusculas e numeros",
     },
   },
   {
