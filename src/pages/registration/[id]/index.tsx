@@ -92,7 +92,12 @@ const ClientOrProvider = ({ id }: I.ClientOrProviderProps) => {
                   </Group>
                 </>
               </Container>
-              <Button title="Enviar" pad="19px 30px" />
+              <Button
+                disabled={!(form.isValid && form.dirty) || form.isSubmitting}
+                type="submit"
+                title="Enviar"
+                pad="19px 30px"
+              />
             </S.Form>
           </FormikProvider>
         </>

@@ -6,6 +6,7 @@ export const inputs1: Inputs[] = [
     label: {
       name: "Nome Completo",
       bold: true,
+      required: true,
     },
   },
   {
@@ -14,6 +15,7 @@ export const inputs1: Inputs[] = [
     label: {
       name: "CPF ou CNPJ",
       bold: true,
+      required: true,
     },
   },
   {
@@ -30,6 +32,7 @@ export const inputs1: Inputs[] = [
     label: {
       name: "Celular",
       bold: true,
+      required: true,
     },
   },
   {
@@ -38,6 +41,8 @@ export const inputs1: Inputs[] = [
     label: {
       name: "Data de nascimento",
       bold: true,
+      required: true,
+      tooltip: "Você tem que ser maior de idade para poder se registrar.",
     },
   },
 ];
@@ -48,6 +53,7 @@ export const inputs2: Inputs[] = [
     label: {
       name: "E-mail",
       bold: true,
+      required: true,
     },
   },
   {
@@ -56,6 +62,7 @@ export const inputs2: Inputs[] = [
     label: {
       name: "Senha",
       bold: true,
+      required: true,
       tooltip: "Sua senha deve conter letras maisculas, minusculas e numeros",
     },
   },
@@ -65,6 +72,7 @@ export const inputs2: Inputs[] = [
     label: {
       name: "Confirmar Senha",
       bold: true,
+      required: true,
     },
   },
   {
@@ -73,6 +81,7 @@ export const inputs2: Inputs[] = [
     label: {
       name: "CEP",
       bold: true,
+      required: true,
     },
   },
 ];
