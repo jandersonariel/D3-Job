@@ -7218,10 +7218,10 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-library-caiol.sousa@^0.0.37:
-  version "0.0.37"
-  resolved "https://registry.yarnpkg.com/library-caiol.sousa/-/library-caiol.sousa-0.0.37.tgz#c25d5e36ddf054310fd14c91241dc93e170ce736"
-  integrity sha512-EjGhsXWU5VoUCL/76NHeqd/bSJrB+mqbPvfXMahlguZns2snOJtUM+cEwUoCAEPohA+rpQX+vp9mMNjJFMsuYA==
+library-caiol.sousa@^0.0.38:
+  version "0.0.38"
+  resolved "https://registry.yarnpkg.com/library-caiol.sousa/-/library-caiol.sousa-0.0.38.tgz#babedc0bee2f2f175b9aecb5715b4bbea4e170b8"
+  integrity sha512-ShgkWcRIWL4tPFHOeialcweMn88YFUq/j+0p/LDikclMQwkzEuDQ8S2AHV2+V3BZj7D5z5VYfXjR1b++UlPPzw==
   dependencies:
     date-fns "^2.29.2"
     formik "^2.2.9"
