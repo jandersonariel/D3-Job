@@ -1,6 +1,7 @@
 /* eslint-disable no-constant-condition */
 import React from "react";
 import { FormikProvider, useFormik } from "formik";
+import { useRouter } from "next/router";
 
 import { Container, Group, Input } from "library-caiol.sousa";
 
@@ -26,7 +27,11 @@ export async function getStaticProps(context: I.GetStaticProps) {
 }
 
 const ClientOrProvider = ({ id }: I.ClientOrProviderProps) => {
-  const onSubmit = (): void => console.log(form.values);
+  const router = useRouter();
+  const onSubmit = (): void => {
+    router.push(id === "client" ? "/client" : "/registration");
+    console.log("");
+  };
 
   const form = useFormik({
     initialValues: {
@@ -40,10 +45,10 @@ const ClientOrProvider = ({ id }: I.ClientOrProviderProps) => {
       passwordConfirm: "",
       cep: "",
     },
-    validationSchema,
-    validateOnChange: true,
-    validateOnMount: true,
-    validateOnBlur: true,
+    // validationSchema,
+    // validateOnChange: true,
+    // validateOnMount: true,
+    // validateOnBlur: true,
     onSubmit,
   });
 
@@ -93,7 +98,7 @@ const ClientOrProvider = ({ id }: I.ClientOrProviderProps) => {
                 </>
               </Container>
               <Button
-                disabled={!(form.isValid && form.dirty) || form.isSubmitting}
+                // disabled={!(form.isValid && form.dirty) || form.isSubmitting}
                 type="submit"
                 title="Enviar"
                 pad="19px 30px"
