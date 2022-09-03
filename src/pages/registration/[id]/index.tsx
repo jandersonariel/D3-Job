@@ -35,20 +35,22 @@ const ClientOrWorker = ({ id }: I.ClientOrWorkerProps) => {
   const router = useRouter();
 
   const onSubmit = async () => {
-    setLoading(true);
-    try {
-      const response = null; // logica para fazer a requisao do backend e logar
-      if (response) router.push(id === "client" ? "/client" : "/registration");
-      else throw Error;
-    } catch (error: any) {
-      setModal({
-        title: "Ocorreu um erro.",
-        description: "testando modal para mensagem de erro do retorno da api",
-      });
-      setIsVisible(true);
-    } finally {
-      setLoading(false);
-    }
+    // setLoading(true);
+    // try {
+    //   const response = null; // logica para fazer a requisao do backend e logar
+    //   if (response) router.push(id === "client" ? "/client" : "/registration");
+    //   else throw Error;
+    // } catch (error: any) {
+    //   setModal({
+    //     title: "Ocorreu um erro.",
+    //     description: "testando modal para mensagem de erro do retorno da api",
+    //   });
+    //   setIsVisible(true);
+    // } finally {
+    //   setLoading(false);
+    // }
+
+    router.push(id === "client" ? "/client" : "/worker");
   };
 
   const form = useFormik({
@@ -78,7 +80,9 @@ const ClientOrWorker = ({ id }: I.ClientOrWorkerProps) => {
         title={modal.title}
         description={modal.description}
       />
-      <Header menuOpc={<Opc href="/registration" label="voltar" />} />
+      <Header
+        menuOpc={<Opc href={{ pathname: "/registration" }} label="voltar" />}
+      />
       <Container
         direction="column"
         maxW={1280}
