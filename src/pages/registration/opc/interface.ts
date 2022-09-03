@@ -1,8 +1,6 @@
+import { HrefProps } from "library-caiol.sousa";
+
 export interface OpcProps {
-  href: {
-    pathname: `/${string}` | `#${string}` | `https://${string}`;
-    rest?: object | undefined;
-    as?: string | undefined;
-  };
+  href: HrefProps;
   label: string;
 }

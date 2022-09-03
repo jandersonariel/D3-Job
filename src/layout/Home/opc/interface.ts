@@ -1,12 +1,10 @@
+import { HrefProps } from "library-caiol.sousa";
+
 import { fontProps, sizeProps } from "../../../global";
 
 export type OpcsProps = {
   name: string;
-  link: {
-    pathname: `/${string}` | `#${string}` | `https://${string}`;
-    rest?: object | undefined;
-    as?: string | undefined;
-  };
+  link: HrefProps;
   size?: sizeProps;
   font?: fontProps;
 }[];

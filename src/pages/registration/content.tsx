@@ -1,5 +1,7 @@
 import React from "react";
 
+import { HrefProps } from "library-caiol.sousa";
+
 import { Perfil, Services } from "../../components";
 
 interface buttonProps {
@@ -7,11 +9,7 @@ interface buttonProps {
   icon: JSX.Element;
   description: string;
   pad: [desktop: number, mobile: number];
-  href: {
-    pathname: `/${string}`;
-    rest?: object | undefined;
-    as?: string | undefined;
-  };
+  href: HrefProps;
 }
 
 export const imgButtons: buttonProps[] = [
@@ -21,7 +19,7 @@ export const imgButtons: buttonProps[] = [
     description:
       "Se no caso for prestar serviços para lojas e outras pessoas escolha <strong> PRESTADOR </strong>",
     pad: [17, 17],
-    href: { pathname: "/registration/worker" },
+    href: { defautlLink: "/registration/worker" },
   },
   {
     name: "Vou ser Client",
@@ -30,7 +28,7 @@ export const imgButtons: buttonProps[] = [
       "Quer apenas contratar um serviço selecione <strong> CLIENTE </strong>",
     pad: [22, 22],
     href: {
-      pathname: "/registration/client",
+      defautlLink: "/registration/client",
     },
   },
 ];

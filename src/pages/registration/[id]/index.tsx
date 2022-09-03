@@ -81,7 +81,7 @@ const ClientOrWorker = ({ id }: I.ClientOrWorkerProps) => {
         description={modal.description}
       />
       <Header
-        menuOpc={<Opc href={{ pathname: "/registration" }} label="voltar" />}
+        menuOpc={<Opc href={{ defautlLink: "/registration" }} label="voltar" />}
       />
       <Container
         direction="column"

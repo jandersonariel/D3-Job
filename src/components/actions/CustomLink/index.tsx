@@ -2,18 +2,14 @@ import React, { ReactNode } from "react";
 import styled from "styled-components";
 import NextLink from "next/link";
 
-import { Link } from "library-caiol.sousa";
+import { Link, HrefProps } from "library-caiol.sousa";
 
 import { colors } from "../../../global";
 
 interface CustomLinkProps {
   children?: ReactNode;
   label: string;
-  href: {
-    pathname: `/${string}` | `#${string}` | `https://${string}`;
-    rest?: object | undefined;
-    as?: string | undefined;
-  };
+  href: HrefProps;
   type?: "buttonLink" | "normalLink";
 }
 
@@ -29,12 +25,16 @@ export const CustomLink = ({
   type = "normalLink",
 }: CustomLinkProps) =>
   type === "buttonLink" ? (
-    <NextLink href={{ pathname: href.pathname, ...href.rest }} as={href.as}>
+    <NextLink href={href.customLink || href.defautlLink} as={href.as}>
       <TagA>{children}</TagA>
     </NextLink>
   ) : (
     <Link
-      href={href}
+      href={{
+        customLink: href.customLink,
+        defautlLink: href.defautlLink,
+        as: href.as,
+      }}
       type="next"
       variant="default"
       colors={[colors.primary]}
