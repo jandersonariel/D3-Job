@@ -17,7 +17,7 @@ export const imgButtons: buttonProps[] = [
     description:
       "Se no caso for prestar serviços para lojas e outras pessoas escolha <strong> PRESTADOR </strong>",
     pad: [17, 17],
-    href: "/registration/provider",
+    href: "/registration/worker",
   },
   {
     name: "Vou ser Client",

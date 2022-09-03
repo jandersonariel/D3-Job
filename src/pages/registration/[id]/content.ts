@@ -6,7 +6,7 @@ export const paths = [
   },
   {
     params: {
-      id: "provider",
+      id: "worker",
     },
   },
 ];

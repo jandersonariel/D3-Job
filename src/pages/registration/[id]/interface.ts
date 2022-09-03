@@ -1,6 +1,6 @@
-type id = "client" | "provider";
+type id = "client" | "worker";
 
-export interface ClientOrProviderProps {
+export interface ClientOrWorkerProps {
   id: id;
 }
 
