@@ -3,14 +3,17 @@ import { OpcProps } from "./interface";
 export const client: OpcProps[] = [
   {
     label: "buscar serviços",
-    href: "/services",
+    page: "services",
+    className: "open",
   },
   {
     label: "minhas solicitaçoes",
-    href: "/solicitations",
+    page: "solicitations",
+    className: "close",
   },
   {
     label: "meu perfil",
-    href: "/profile",
+    page: "profile",
+    className: "close",
   },
 ];

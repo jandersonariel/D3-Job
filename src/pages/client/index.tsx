@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
+
 import { Header } from "../../layout";
+import { client as C } from "../../modules";
+
 import { Opc } from "./opc";
+import * as I from "./interface";
 
-const client = () => (
-  <>
-    <Header menuOpc={<Opc />} />
-    <h1>client</h1>
-    <p>daskljd lsakdj</p>
-  </>
-);
+const Client = ({ user }: I.ClientProps) => {
+  const [page, setPage] = useState<"services" | "solicitations" | "profile">(
+    "services"
+  );
 
-export default client;
+  return (
+    <>
+      <Header menuOpc={<Opc user={user} setPage={setPage} />} />
+      {page === "services" && <C.Services />}
+      {page === "profile" && <C.Profile />}
+      {page === "solicitations" && <C.Solicitations />}
+    </>
+  );
+};
+
+export default Client;
