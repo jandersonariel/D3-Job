@@ -1,9 +1,8 @@
-/* eslint-disable no-constant-condition */
-import React from "react";
+import React, { useState } from "react";
 import { FormikProvider, useFormik } from "formik";
 import { useRouter } from "next/router";
 
-import { Container, Group, Input } from "library-caiol.sousa";
+import { Container, Group, Input, Modal } from "library-caiol.sousa";
 
 import { Button } from "../../../components";
 import { Header } from "../../../layout";
@@ -26,11 +25,30 @@ export async function getStaticProps(context: I.GetStaticProps) {
   return { props: { id } };
 }
 
-const ClientOrProvider = ({ id }: I.ClientOrProviderProps) => {
+const ClientOrWorker = ({ id }: I.ClientOrWorkerProps) => {
+  const [loading, setLoading] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  const [modal, setModal] = useState({
+    title: "",
+    description: "",
+  });
   const router = useRouter();
-  const onSubmit = (): void => {
-    router.push(id === "client" ? "/client" : "/registration");
-    console.log("");
+
+  const onSubmit = async () => {
+    setLoading(true);
+    try {
+      const response = null; // logica para fazer a requisao do backend e logar
+      if (response) router.push(id === "client" ? "/client" : "/registration");
+      else throw Error;
+    } catch (error: any) {
+      setModal({
+        title: "Ocorreu um erro.",
+        description: "testando modal para mensagem de erro do retorno da api",
+      });
+      setIsVisible(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const form = useFormik({
@@ -54,6 +72,12 @@ const ClientOrProvider = ({ id }: I.ClientOrProviderProps) => {
 
   return (
     <>
+      <Modal
+        isVisible={isVisible}
+        onClose={setIsVisible}
+        title={modal.title}
+        description={modal.description}
+      />
       <Header menuOpc={<Opc href="/registration" label="voltar" />} />
       <Container
         direction="column"
@@ -98,7 +122,8 @@ const ClientOrProvider = ({ id }: I.ClientOrProviderProps) => {
                 </>
               </Container>
               <Button
-                // disabled={!(form.isValid && form.dirty) || form.isSubmitting}
+                // disabled={!(form.isValid && form.dirty) || form.isSubmitting || loading}
+                isLoading={loading}
                 type="submit"
                 title="Enviar"
                 pad="19px 30px"
@@ -111,4 +136,4 @@ const ClientOrProvider = ({ id }: I.ClientOrProviderProps) => {
   );
 };
 
-export default ClientOrProvider;
+export default ClientOrWorker;
