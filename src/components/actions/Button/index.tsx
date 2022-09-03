@@ -12,7 +12,7 @@ export const Button = ({
 }: ButtonProps) => (
   <S.Container {...rest}>
     {isLoading ? (
-      <ClipLoader size={16} />
+      <ClipLoader size={16} loading />
     ) : (
       <>
         <p>{title}</p>
