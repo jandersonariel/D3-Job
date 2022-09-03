@@ -3,22 +3,24 @@ import { OpcsProps } from "./interface";
 export const help: OpcsProps = [
   {
     name: "Como funciona?",
-    link: "#how",
+    link: {
+      pathname: "#how",
+    },
   },
   {
     name: "Contatos",
-    link: "#contact",
+    link: { pathname: "#contact" },
   },
 ];
 
 export const registration: OpcsProps = [
   {
     name: "ENTRAR",
-    link: "/",
+    link: { pathname: "/" },
   },
   {
     name: "REGISTRAR-SE",
-    link: "/registration",
+    link: { pathname: "/registration" },
     size: "variant",
     font: "large",
   },

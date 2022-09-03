@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Image from "next/image";
-import { colors, fonts } from "../../global";
+import { colors, fonts } from "../../../global";
 
 export const ContainerImg = styled.span`
   width: 100%;

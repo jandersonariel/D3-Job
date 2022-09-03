@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Image from "next/image";
-import { medias } from "../../global";
+import { medias } from "../../../global";
 
 interface stylesProps {
   transform?: string;

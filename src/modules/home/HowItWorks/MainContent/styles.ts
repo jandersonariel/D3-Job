@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Image from "next/image";
 import { Group } from "library-caiol.sousa";
 
-import { colors, fonts, medias } from "../../../global";
+import { colors, fonts, medias } from "../../../../global";
 
 export const Paragraph = styled.span`
   display: flex;

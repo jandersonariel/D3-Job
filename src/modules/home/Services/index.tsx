@@ -2,7 +2,7 @@ import React from "react";
 
 import { Container } from "library-caiol.sousa";
 
-import * as C from "../../components";
+import * as C from "../../../components";
 
 import * as CT from "./content";
 import * as S from "./styles";

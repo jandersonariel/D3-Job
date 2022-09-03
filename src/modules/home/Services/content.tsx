@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Perfil, Services } from "../../components";
+import { Perfil, Services } from "../../../components";
 
 export const imgButtons = [
   {

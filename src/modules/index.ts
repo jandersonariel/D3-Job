@@ -1,4 +1,2 @@
-export * from './Services';
-export * from './HowItWorks';
-export * from './Contacts';
-
+export * from "./home";
+export * from "./client";

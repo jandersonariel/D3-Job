@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Container } from "library-caiol.sousa";
 
-import * as A from "../../../assets";
+import * as A from "../../../../assets";
 
 import * as S from "./styles";
 

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Group } from "library-caiol.sousa";
-import { medias } from "../../global";
+import { medias } from "../../../global";
 
 export const CustomGroup = styled(Group)`
   @media (${medias.small}) {

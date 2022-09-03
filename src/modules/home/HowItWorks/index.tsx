@@ -2,7 +2,7 @@ import React from "react";
 
 import { Container, Group } from "library-caiol.sousa";
 
-import * as A from "../../assets";
+import * as A from "../../../assets";
 
 import { MainContent } from "./MainContent";
 

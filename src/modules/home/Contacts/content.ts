@@ -1,4 +1,4 @@
-import * as A from "../../assets";
+import * as A from "../../../assets";
 
 export const contatos = [
   {
