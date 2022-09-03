@@ -1,4 +1,8 @@
 export interface OpcProps {
-  href: "/" | `/${string}`;
+  href: {
+    pathname: `/${string}` | `#${string}` | `https://${string}`;
+    rest?: object | undefined;
+    as?: string | undefined;
+  };
   label: string;
 }

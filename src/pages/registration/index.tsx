@@ -13,7 +13,7 @@ import * as S from "./styles";
 
 const Registration = () => (
   <>
-    <Header menuOpc={<Opc href="/" label="login" />} />
+    <Header menuOpc={<Opc href={{ pathname: "/" }} label="login" />} />
     <Container direction="column" pad={[15, 20, 15, 20]} gap={[70, 50]}>
       <>
         <S.Heading>
@@ -38,7 +38,11 @@ const Registration = () => (
               >
                 <Description text={description} align="center" width={275} />
 
-                <C.CustomLink href={href} label="" type="buttonLink">
+                <C.CustomLink
+                  href={{ pathname: href.pathname }}
+                  label=""
+                  type="buttonLink"
+                >
                   <C.Button
                     weight="regular"
                     color="white"

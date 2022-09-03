@@ -7,7 +7,11 @@ interface buttonProps {
   icon: JSX.Element;
   description: string;
   pad: [desktop: number, mobile: number];
-  href: `/${string}`;
+  href: {
+    pathname: `/${string}`;
+    rest?: object | undefined;
+    as?: string | undefined;
+  };
 }
 
 export const imgButtons: buttonProps[] = [
@@ -17,7 +21,7 @@ export const imgButtons: buttonProps[] = [
     description:
       "Se no caso for prestar serviços para lojas e outras pessoas escolha <strong> PRESTADOR </strong>",
     pad: [17, 17],
-    href: "/registration/worker",
+    href: { pathname: "/registration/worker" },
   },
   {
     name: "Vou ser Client",
@@ -25,6 +29,8 @@ export const imgButtons: buttonProps[] = [
     description:
       "Quer apenas contratar um serviço selecione <strong> CLIENTE </strong>",
     pad: [22, 22],
-    href: "/registration/client",
+    href: {
+      pathname: "/registration/client",
+    },
   },
 ];

@@ -9,7 +9,11 @@ import { colors } from "../../../global";
 interface CustomLinkProps {
   children?: ReactNode;
   label: string;
-  href: `/${string}` | `#${string}` | `https://${string}`;
+  href: {
+    pathname: `/${string}` | `#${string}` | `https://${string}`;
+    rest?: object | undefined;
+    as?: string | undefined;
+  };
   type?: "buttonLink" | "normalLink";
 }
 
@@ -25,7 +29,7 @@ export const CustomLink = ({
   type = "normalLink",
 }: CustomLinkProps) =>
   type === "buttonLink" ? (
-    <NextLink href={href}>
+    <NextLink href={{ pathname: href.pathname, ...href.rest }} as={href.as}>
       <TagA>{children}</TagA>
     </NextLink>
   ) : (

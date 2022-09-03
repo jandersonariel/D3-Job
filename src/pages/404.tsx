@@ -8,7 +8,7 @@ import { colors, fonts } from "../global";
 const NotFound = () => (
   <h1>
     Tela não encontrada <br />
-    <CustomLink href="/" label="clique aqui" />
+    <CustomLink href={{ pathname: "/" }} label="clique aqui" />
     para voltar a home
   </h1>
 );
