@@ -24,8 +24,8 @@ export const Services = () => {
   });
   return (
     <Container
-      minH={600}
-      justify="center"
+      minH={500}
+      justify="flex-end"
       align="center"
       maxW={1280}
       gap={[80, 40]}
