@@ -3,6 +3,12 @@ import { FormikProvider, useFormik } from "formik";
 
 import { Container, Group, Input, Description } from "library-caiol.sousa";
 
+import * as A from "../../../assets";
+
+import validationSchema from "./validations";
+
+import * as S from "./styles";
+
 export const Services = () => {
   const onSubmit = (): void => console.log(form.values);
 
@@ -10,6 +16,10 @@ export const Services = () => {
     initialValues: {
       search: "",
     },
+    validationSchema,
+    validateOnChange: true,
+    validateOnMount: true,
+    validateOnBlur: true,
     onSubmit,
   });
   return (
@@ -30,10 +40,10 @@ export const Services = () => {
           align="flex-start"
           maxW={1100}
         >
-          <h1 style={{ textIndent: "8px" }}>Qual serviço está procurando?</h1>
+          <S.H1>Qual serviço está procurando?</S.H1>
           <FormikProvider value={form}>
-            <form onSubmit={form.handleSubmit} style={{ width: "100%" }}>
-              <Group gap={[10, 10]}>
+            <S.Form onSubmit={form.handleSubmit}>
+              <Group gap={[20, 20]}>
                 <Group direction="column" align="flex-end" gap={[5, 5]}>
                   <Input
                     name="search"
@@ -42,15 +52,21 @@ export const Services = () => {
                   />
                   <Description text="Lista de prestadores" />
                 </Group>
-                <button type="submit">search</button>
+                <S.Button type="submit">
+                  <S.Img
+                    src={A.imgs.searchLocation}
+                    width="40px"
+                    height="40px"
+                  />
+                </S.Button>
               </Group>
-            </form>
+            </S.Form>
           </FormikProvider>
         </Group>
 
         <Group gap={[20, 20]} direction="column" maxW="block">
           <h2>Sugestão de serviços</h2>
-          <Group gap={[50, 50]}>
+          <Group gap={[50, 50]} pad={[0, 0, 0, 20]}>
             <Group direction="column" maxW="max-content">
               <li>Encanamento</li>
               <li>Troca de lampada</li>
