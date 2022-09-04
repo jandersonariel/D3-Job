@@ -9,6 +9,7 @@ import instagram from "./instagram.png";
 import whatsapp from "./whatsapp.png";
 import logoUnnameds from "./logoUnnameds.png";
 import semImg from "./semImg.jpg";
+import searchLocation from "./searchLocation.png";
 
 export const imgs = {
   up_png,
@@ -22,4 +23,5 @@ export const imgs = {
   whatsapp,
   logoUnnameds,
   semImg,
+  searchLocation,
 };
