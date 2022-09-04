@@ -12,15 +12,31 @@ export const Container = styled.nav`
 
   .open {
     color: ${colors.black};
-    :hover {
-      color: ${colors.blue};
-    }
   }
 
   .close {
     color: ${colors.blue};
-    :hover {
+    :hover,
+    :active {
+      letter-spacing: 3px;
       color: ${colors.black};
+    }
+
+    :after {
+      backface-visibility: hidden;
+      content: " ";
+      position: relative;
+      transition: all 280ms ease-in-out;
+      width: 0;
+    }
+
+    :hover:after {
+      backface-visibility: hidden;
+      border-color: ${colors.black};
+      transition: width 350ms ease-in-out;
+      width: 120%;
+      bottom: auto;
+      top: 0;
     }
   }
 `;
@@ -40,29 +56,6 @@ export const Link = styled.p`
   gap: 10px;
   font-weight: ${fonts.weight.bold};
   font-size: ${fonts.sizes.medium};
-
-  :hover,
-  :active {
-    letter-spacing: 3px;
-    color: ${colors.black};
-  }
-
-  :after {
-    backface-visibility: hidden;
-    content: " ";
-    position: relative;
-    transition: all 280ms ease-in-out;
-    width: 0;
-  }
-
-  :hover:after {
-    backface-visibility: hidden;
-    border-color: ${colors.black};
-    transition: width 350ms ease-in-out;
-    width: 120%;
-    bottom: auto;
-    top: 0;
-  }
 `;
 
 export const ContainerImg = styled.span`
