@@ -65,10 +65,10 @@ const ClientOrWorker = ({ id }: I.ClientOrWorkerProps) => {
       passwordConfirm: "",
       cep: "",
     },
-    // validationSchema,
-    // validateOnChange: true,
-    // validateOnMount: true,
-    // validateOnBlur: true,
+    validationSchema,
+    validateOnChange: true,
+    validateOnMount: true,
+    validateOnBlur: true,
     onSubmit,
   });
 

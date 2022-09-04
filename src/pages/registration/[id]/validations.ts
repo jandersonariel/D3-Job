@@ -1,8 +1,6 @@
 import * as yup from "yup";
 import { validations, regex } from "library-caiol.sousa";
 
-const { phone } = regex;
-
 const {
   name,
   dateWithRestrictionOfAge,
